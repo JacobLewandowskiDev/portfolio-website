@@ -20,13 +20,16 @@ body {
   color: var(--font-color);
   height: 100vh;
   width: 100vw;
+  background-image: url("../assets/background.jpg");
 }
 
 :root {
   --background-color: #0a0a0a;
   --font-color: #ffffff;
-  --page-width: 75%;
-  --card-background-color: #ff791fc9;
+  --page-width: 75vw;
+  --page-height: 90vh;
+  --card-border-color: #73d7ff38;
+  --icon-color: #ffffff;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -35,17 +38,29 @@ body {
 
 h1 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .page-container {
   width: var(--page-width);
   border: 2px solid red;
   margin: 0 auto;
-  height: 100vh;
+  height: var(--page-height);
 }
 
-.card {
-  background: var(--card-background-color);
-
+.contact {
+  height: 10vh;
+  display: flex;
+  border: 2px solid purple;
+}
+.contact__icon {
+  margin: 10px;
+  min-width: 30px;
+  width: 5vh;
+  height: auto;
+  padding: 10px;
+  color: var(--icon-color);
+  background-color: #9e9e9ed2;
+  border-radius: 100%;
+  cursor: pointer;
 }
