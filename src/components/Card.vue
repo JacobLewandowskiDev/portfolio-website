@@ -1,14 +1,21 @@
 <script>
 export default {
-
+  props: {
+    card: {
+      type: Object,
+      required: true
+    }
+  }
 };
 </script>
 
 <template>
   <div class="card">
-    <img class="card__img" src="" />
-    <p class="card__description">Description</p>
-    <router-link class="card__link" :to="{ Link }" type="button">About</router-link>
+    <img class="card__img" v-if="card.index === 0" src="../assets/code-icon.svg">
+    <img class="card__img" v-if="card.index === 1" src="../assets/aboutme-icon.svg">
+    <img class="card__img" v-if="card.index === 2" src="../assets/blog-icon.svg">
+    <p class="card__description"> {{ card.description }}</p>
+    <router-link class="card__link" :to="card.link" type="button">{{ card.name }}</router-link>
   </div>
 </template>
 
@@ -16,7 +23,6 @@ export default {
 .card {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 12rem;
@@ -30,16 +36,20 @@ export default {
   box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
+
+}
+
+.card__img {
+  align-items: top;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  padding: .2rem;
 }
 
 .card__link {
-  position: absolute;
   color: var(--font-color);
   text-decoration: none;
-  background-color: var(--card-link-bg-color);
-  /* border: 2px solid yellow; */
-  padding: .5rem 1rem;
-  border-radius: .5rem;
   bottom: 20%;
 }
 

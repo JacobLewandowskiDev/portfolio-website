@@ -4,21 +4,44 @@ import Navigation from "../components/Navigation.vue";
 export default {
   components: {
     Card: Card,
-    Navigation: Navigation
+    Navigation: Navigation,
+  },
+
+  data() {
+    return {
+      cards: [
+        {
+          index: 0,
+          description: "My projects",
+          link: "Projects",
+          name: "Projects",
+        },
+        {
+          index: 1,
+          description: "About Me",
+          link: "About",
+          name: "About me",
+        },
+        {
+          index: 2,
+          description: "My Resume",
+          link: "Blog",
+          name: "Blog",
+        },
+      ],
+    };
   },
 };
 </script>
 
 <template>
   <header>
-    <Navigation/>
+    <Navigation />
   </header>
   <div class="page-container">
     <h1 class="name">Jacob Lewandowski</h1>
     <div class="page-container__tiles">
-      <Card class="card" />
-      <Card class="card" />
-      <Card class="card" />
+      <Card v-for="(card, index) in cards" :key="index" :card="card" />
     </div>
   </div>
 </template>
@@ -47,6 +70,6 @@ export default {
 }
 
 .card:nth-child(2) {
-  margin-top: -2rem;
+  margin-top: -3rem;
 }
 </style>
