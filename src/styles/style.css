@@ -9,6 +9,9 @@
     Sky blue: #73D7FF,
     Azure: #37C6FF,
     Orange: #FF781F
+
+    background gradient to use when canvas is created //TODO
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 } */
 
 html {
@@ -30,7 +33,11 @@ body {
   --page-width: 75vw;
   --page-height: 90vh;
   --card-border-color: #ffffff38;
-  --card-link-bg-color: #37c6ff25;
+  --card-link-bg-color: #ffffff38;
+  --card-link-bg-color-hover: #e6e6e654;
+  --card-link-bg-color-active: #37c6ff91;
+  --card-link-text-color: #f0f0f0;
+  --card-link-text-color-hover: #ffffff;
   --menu-icon-background-color: var(--background-color);
   --menu-icon-fill-color: #dfdfdf;
   --menu-icon-fill-color-hover: #ffffff;
@@ -45,8 +52,9 @@ body {
 }
 
 h1 {
+  font-family: "Electrolize", sans-serif;
   color: var(--font-color);
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .page-container {

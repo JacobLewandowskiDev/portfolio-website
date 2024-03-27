@@ -12,21 +12,21 @@ export default {
       cards: [
         {
           index: 0,
-          description: "My projects",
+          description: "Take a tour of my coding projects.",
           link: "Projects",
-          name: "Projects",
+          name: "View Projects",
         },
         {
           index: 1,
-          description: "About Me",
+          description: "Learn more about me.",
           link: "About",
           name: "About me",
         },
         {
           index: 2,
-          description: "My Resume",
-          link: "Blog",
-          name: "Blog",
+          description: "Preview my Resume.",
+          link: "Resume",
+          name: "My Resume",
         },
       ],
     };
