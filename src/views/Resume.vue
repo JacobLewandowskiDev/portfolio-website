@@ -14,9 +14,10 @@ export default {
       <Navigation />
     </header>
     <div class="page__container">
-      <h1>About me</h1>
+      <h1>My Resume</h1>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

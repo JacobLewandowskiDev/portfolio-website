@@ -19,15 +19,16 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
   color: var(--font-color);
-  height: 100vh;
-  width: 100vw;
+  height: var(--website-height);
+  width: var(--website-width);
   box-sizing: border-box;
-  background-image: url("../assets/background.jpg");
+  background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(64, 64, 64) 100%);
 }
 
 :root {
+  --website-height: 100vh;
+  --website-width: 100vw;
   --background-color: #0a0a0a;
   --font-color: #ffffff;
   --page-width: 75vw;
@@ -51,13 +52,28 @@ body {
   font-size: 1.5rem;
 }
 
-h1 {
+h1, h2 {
   font-family: "Electrolize", sans-serif;
   color: var(--font-color);
   font-size: 4rem;
 }
 
-.page-container {
+h2 {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+
+.page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background-color);
+  z-index: 1;
+}
+
+.page__container, .page--container {
+  top: 10vh;
+  text-align: center;
   position: relative;
   width: var(--page-width);
   margin: 0 auto;
@@ -65,55 +81,4 @@ h1 {
   border: 2px solid transparent;
 }
 
-.media {
-  position: fixed;
-  top: 0;
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  list-style-type: none;
-  z-index: 10;
-}
 
-.media__item {
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  width: 1.7rem;
-  height: 1.7rem;
-  margin: 0 .7rem;
-  background-color: var(--menu-icon-background-color);
-  border: var(--menu-icon-border);
-  border-radius: 50%;
-  cursor: pointer;
-  fill: var(--menu-icon-fill-color);
-  transition: linear .1s;
-}
-
-.media__item__link {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  fill: inherit;
-  margin: auto;
-  width: 1.4rem;
-  padding: .2rem;
-}
-
-.media__item:hover {
-  background-color: var(--menu-icon-background-color);
-  border: var(--menu-icon-border-hover);
-  fill:var(--menu-icon-fill-color-hover);
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-}
-
-.media__item:active {
-  border: var(--menu-icon-border-active);
-  background-color: var(--menu-icon-background-color);
-  box-shadow: 0px 0px 20px #37C6FF;
-  fill:var(--menu-icon-fill-color-active);
-}

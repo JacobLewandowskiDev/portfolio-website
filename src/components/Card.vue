@@ -25,7 +25,7 @@ export default {
     <img
       class="card__img"
       v-if="card.index === 2"
-      src="../assets/blog-icon.svg"
+      src="../assets/resume-icon.svg"
     />
     <p class="card__description">{{ card.description }}</p>
     <router-link class="card__link" :to="card.link" type="button">{{
