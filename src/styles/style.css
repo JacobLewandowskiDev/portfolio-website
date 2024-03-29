@@ -46,6 +46,7 @@ body {
   --menu-icon-border: 2px solid #727272;
   --menu-icon-border-hover: 2px solid #adadad;
   --menu-icon-border-active: #37C6FF;
+  --skilltree-skill-color: #dfdfdf;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

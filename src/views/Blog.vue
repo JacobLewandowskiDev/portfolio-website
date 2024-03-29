@@ -14,7 +14,7 @@ export default {
       <Navigation />
     </header>
     <div class="page__container">
-      <h1>My Resume</h1>
+      <h1>My blog</h1>
     </div>
   </div>
 </template>

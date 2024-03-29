@@ -24,9 +24,9 @@ export default {
         },
         {
           index: 2,
-          description: "Preview my Resume.",
-          link: "Resume",
-          name: "My Resume",
+          description: "Preview my blog.",
+          link: "Blog",
+          name: "My blog",
         },
       ]
     };
