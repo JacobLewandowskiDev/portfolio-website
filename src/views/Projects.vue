@@ -9,10 +9,8 @@ export default {
 </script>
 
 <template>
+  <Navigation />
   <div class="page">
-    <header>
-      <Navigation />
-    </header>
     <div class="page__container">
       <h1>Project Portfolio</h1>
     </div>

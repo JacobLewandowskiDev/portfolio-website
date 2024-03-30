@@ -16,44 +16,59 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
 }
 
 body {
+  position: relative;
   color: var(--font-color);
   height: var(--website-height);
   width: var(--website-width);
+  font-size: 18px;
   box-sizing: border-box;
   background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(64, 64, 64) 100%);
 }
 
 :root {
-  --website-height: 100vh;
+  --website-height: 100%;
   --website-width: 100vw;
   --background-color: #0a0a0a;
   --font-color: #ffffff;
-  --page-width: 75vw;
-  --page-height: 90vh;
   --card-border-color: #ffffff38;
   --card-link-bg-color: #ffffff38;
   --card-link-bg-color-hover: #e6e6e654;
   --card-link-bg-color-active: #37c6ff91;
   --card-link-text-color: #f0f0f0;
   --card-link-text-color-hover: #ffffff;
+  --menu-height: 8vh;
+  --menu-width: 100vw;
+  --menu-background-color: #0a0a0a09;
   --menu-icon-background-color: var(--background-color);
   --menu-icon-fill-color: #dfdfdf;
   --menu-icon-fill-color-hover: #ffffff;
-  --menu-icon-fill-color-active: #37C6FF;
-  --menu-icon-border: 2px solid #727272;
-  --menu-icon-border-hover: 2px solid #adadad;
-  --menu-icon-border-active: #37C6FF;
+  --menu-icon-fill-color-active: #37c6ff;
+  --menu-icon-border: 0.1rem solid #727272;
+  --menu-icon-border-hover: 0.1rem solid #adadad;
+  --menu-icon-border-active: #37c6ff;
   --skilltree-skill-color: #dfdfdf;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Electrolize", sans-serif;
   color: var(--font-color);
   font-size: 4rem;
@@ -65,21 +80,22 @@ h2 {
 }
 
 .page {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
   background: var(--background-color);
-  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.page__container, .page--container {
-  top: 10vh;
-  text-align: center;
-  position: relative;
-  width: var(--page-width);
+
+.page__container {
+  width: 75%;
   margin: 0 auto;
-  height: var(--page-height);
-  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--menu-height));
+  margin-top: var(--menu-height);
 }
-
-

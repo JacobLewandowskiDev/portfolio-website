@@ -1,6 +1,6 @@
 <script>
 import Navigation from "../components/Navigation.vue";
-import Resume from "../components/Resume.vue"; 
+import Resume from "../components/Resume.vue";
 
 export default {
   components: {
@@ -12,21 +12,11 @@ export default {
 
 <template>
   <div class="page">
-    <header>
-      <Navigation />
-    </header>
+    <Navigation />
     <div class="page__container">
-      <h1>About me</h1>
       <Resume />
     </div>
   </div>
 </template>
 
-<style scoped>
-.page__container {
-  border: 2px solid red;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-</style>
+<style scoped></style>

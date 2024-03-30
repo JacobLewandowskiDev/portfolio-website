@@ -9,15 +9,12 @@ export default {
 </script>
 
 <template>
+  <Navigation />
   <div class="page">
-    <header>
-      <Navigation />
-    </header>
     <div class="page__container">
       <h1>My blog</h1>
     </div>
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

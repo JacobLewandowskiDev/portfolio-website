@@ -43,14 +43,14 @@ export default {
   width: 12rem;
   height: 15rem;
   margin: 0 1rem;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
+  border-right: .1rem solid;
+  border-bottom: .1rem solid;
   border-color: var(--card-border-color);
   border-radius: 24px;
-  padding: 20px;
-  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6.1px);
-  -webkit-backdrop-filter: blur(6.1px);
+  padding: 2rem;
+  box-shadow: .3rem .6rem .9rem rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(.9rem);
+  -webkit-backdrop-filter: blur(.9rem);
 }
 
 .card__img {
@@ -77,13 +77,13 @@ export default {
   bottom: 10%;
   padding: 0.5rem;
   background-color: var(--card-link-bg-color);
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6.1px);
-  -webkit-backdrop-filter: blur(6.1px);
+  box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(.6rem);
+  -webkit-backdrop-filter: blur(.6rem);
   border-radius: .4rem;
   font-weight: 600;
   transition: linear .1s;
-  border: 1px solid #ffffff38;
+  border: .1rem solid #ffffff38;
 }
 
 .card__link:hover {
@@ -94,8 +94,7 @@ export default {
 
 .card__link:active {
   background-color: var(--card-link-bg-color-active);
-  box-shadow: 0px 0px 20px #37C6FF;
-  border: 1px solid #37C6FF;
+  box-shadow: 0 0 .6rem #37C6FF;
+  border: .1rem solid #37C6FF;
 }
-
 </style>

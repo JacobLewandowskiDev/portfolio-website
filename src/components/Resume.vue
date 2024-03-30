@@ -8,16 +8,31 @@ export default {
 </script>
 
 <template>
+  <h1>About me</h1>
   <div class="resume">
     <div class="resume__jakub">
       <img
         class="resume__jakub__img"
         src="../assets/handsome_devil_transtparent.png"
       />
-      <h2 class="resume__jakub__name">Jacob Lewandowski</h2>
+      <div class="resume__jakub__summary">
+        <h2 class="resume__jakub__summary__name">Jacob Lewandowski</h2>
+        <p class="resume__jakub__summary__desc">
+          Hi, I'm Jacob, a self-taught full-stack Software Engineer with a love
+          for coding and all things nerdy. I'm passionate about diving deep into
+          the world of programming, solving problems, and crafting simple, yet
+          elegant solutions. Constantly on the lookout for new challenges,
+          fueled by my hunger for knowledge. Whether it's unraveling complex
+          algorithms or indulging in a bit of code simplicity, I'm always up for
+          the adventure. So, let's embark on this journey together, armed with
+          curiosity, my skill set, and a few dad jokes along the way!
+        </p>
+      </div>
     </div>
     <Skilltree />
-    <div class="resume__history"></div>
+    <div class="resume__history">
+    
+    </div>
   </div>
 </template>
 
@@ -25,34 +40,36 @@ export default {
 .resume {
   display: flex;
   flex-direction: column;
-  position: relative;
-  border: 2px solid yellow;
-  width: 70%;
+  width: 90%;
 }
 
 .resume__jakub {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .resume__jakub__img {
-  display: inline;
   width: 12rem;
   height: 12rem;
-  border: 4px solid rgb(255, 255, 255);
   border-radius: 50%;
   margin-right: 5%;
 }
 
-.resume__jakub__name {
+.resume__jakub__summary {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 65%;
+}
+
+.resume__jakub__summary__name {
   font-size: 2.5rem;
 }
 
-.resume__history {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  border: 2px solid greenyellow;
-  margin-top: 2rem;
+.resume__jakub__summary__desc {
+  font-size: 0.8rem;
+  line-height: 1.3;
 }
 </style>

@@ -28,44 +28,44 @@ export default {
           link: "Blog",
           name: "My blog",
         },
-      ]
+      ],
     };
   },
 };
 </script>
 
 <template>
-  <header>
-    <Navigation/>
-  </header>
-  <div class="page--container">
-    <h1 class="page--container__name">Jacob Lewandowski</h1>
-    <div class="page--container__tiles">
-      <Card v-for="(card, index) in cards" :key="index" :card="card" />
+  <div class="page">
+    <Navigation />
+    <div class="page__container">
+      <h1 class="page__container__name">Jacob Lewandowski</h1>
+      <div class="page__container__tiles">
+        <Card v-for="(card, index) in cards" :key="index" :card="card" />
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.page--container__name {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  text-align: center;
-  line-height: 1;
-  word-break: keep-all;
-  height: 30vh;
+.page {
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(64, 64, 64) 100%);
 }
 
-.page--container__tiles {
-  position: absolute;
+.page__container__name {
+  display: flex;
+  width: fit-content;
+  margin-left: 15rem;
+  line-height: 1;
+  word-break: keep-all;
+  margin-bottom: 4rem;
+}
+
+.page__container__tiles {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 50vh;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .card:nth-child(2) {
