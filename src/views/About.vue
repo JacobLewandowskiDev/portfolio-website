@@ -19,13 +19,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-.page {
-  border: .1rem solid red;
-  height: fit-content;
-}
-
-.page__container {
-  border: .1rem solid orange;
-}
-</style>
+<style scoped></style>

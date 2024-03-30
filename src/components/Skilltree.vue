@@ -27,23 +27,21 @@ export default {
 </template>
 
 <style scoped>
-.skilltree {
-  border: .1rem solid purple;
-}
-
 .skilltree__title {
   border-bottom: 0.1rem solid #ffffff;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 .skilltree__list {
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .skilltree__list__skill {

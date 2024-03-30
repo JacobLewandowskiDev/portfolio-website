@@ -56,9 +56,10 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-size: 1.6rem;
+  --p-color: #c2c2c2;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Electrolize", sans-serif;
   color: var(--font-color);
 }
@@ -70,6 +71,12 @@ h1 {
 h2 {
   font-size: 1.5rem;
   word-wrap: break-word;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .page {
