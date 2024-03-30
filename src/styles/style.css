@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-/* .potential-color-schemes {
-    Jet black: #0a0a0a,
-    Sky blue: #73D7FF,
-    Azure: #37C6FF,
-    Orange: #FF781F
-
-    background gradient to use when canvas is created //TODO
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
-} */
-
 html {
   scroll-behavior: smooth;
   overflow: scroll;
@@ -60,17 +50,20 @@ body {
   --menu-icon-border: 0.1rem solid #727272;
   --menu-icon-border-hover: 0.1rem solid #adadad;
   --menu-icon-border-active: #37c6ff;
-  --skilltree-skill-color: #dfdfdf;
+  --skilltree-skill-color: #ffffff;
+  --skilltree-icon-color:#37c6ff;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 1.6rem;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: "Electrolize", sans-serif;
   color: var(--font-color);
+}
+
+h1 {
   font-size: 4rem;
 }
 
@@ -88,14 +81,14 @@ h2 {
   justify-content: center;
 }
 
-
 .page__container {
+  position: relative;
   width: 75%;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - var(--menu-height));
   margin-top: var(--menu-height);
 }

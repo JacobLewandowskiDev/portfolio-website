@@ -27,10 +27,13 @@ export default {
 </template>
 
 <style scoped>
+.skilltree {
+  border: .1rem solid purple;
+}
+
 .skilltree__title {
   border-bottom: 0.1rem solid #ffffff;
   width: 90%;
-  padding-top: 1rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -51,18 +54,18 @@ export default {
   transition: all 0.2s ease;
   display: grid;
   grid-template-rows: 3fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .skilltree__list__skill__icon {
-  fill: var(--skilltree-skill-color);
+  fill: var(--skilltree-icon-color);
   width: 60%;
   height: 60%;
-  margin: auto;
+  transition: linear .2s ease;
 }
 
 .skilltree__list__skill__name {
-  height: 40%;
-  width: 100%;
   font-size: 0.8rem;
   font-weight: bold;
   color: var(--skilltree-skill-color);

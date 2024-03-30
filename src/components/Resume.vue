@@ -8,8 +8,8 @@ export default {
 </script>
 
 <template>
-  <h1>About me</h1>
   <div class="resume">
+    <h1 class="resume__title">About me</h1>
     <div class="resume__jakub">
       <img
         class="resume__jakub__img"
@@ -29,7 +29,7 @@ export default {
         </p>
       </div>
     </div>
-    <Skilltree />
+    <Skilltree class="resume__skills"/>
     <div class="resume__history">
     
     </div>
@@ -38,9 +38,16 @@ export default {
 
 <style scoped>
 .resume {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 90%;
+  height: 100%;
+  border: .1rem solid yellow;
+}
+
+.resume__title {
+  text-align: center;
 }
 
 .resume__jakub {
@@ -48,6 +55,8 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 1rem 0;
+  border: .1rem solid lightgreen;
 }
 
 .resume__jakub__img {
@@ -62,6 +71,7 @@ export default {
   flex-direction: column;
   text-align: left;
   width: 65%;
+  height: 12rem;
 }
 
 .resume__jakub__summary__name {
@@ -70,6 +80,7 @@ export default {
 
 .resume__jakub__summary__desc {
   font-size: 0.8rem;
-  line-height: 1.3;
+  line-height: 1.5;
+  color: #c2c2c2;
 }
 </style>

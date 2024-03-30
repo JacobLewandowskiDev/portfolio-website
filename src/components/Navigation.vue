@@ -102,11 +102,7 @@ export default {
     </li>
   </ul>
   </div>
-  <div
-    class="email--overlay"
-    v-if="displayEmailOverlay"
-    :class="{ 'email--overlay--show': displayEmailOverlay }"
-  >
+  <div class="email--overlay" v-if="displayEmailOverlay" :class="{ 'email--overlay--show': displayEmailOverlay }">
     <span class="email--overlay__close" @click="hideEmailOverlay">X</span>
     <div class="email--overlay__content">
       <h1>Let's chat over email</h1>
@@ -185,15 +181,17 @@ export default {
 
 .email--overlay {
   display: none;
-  opacity: 0;
-  position: absolute;
-  background-color: var(--background-color);
-  width: 100vw;
-  height: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
   z-index: 100;
   animation: "hideEmail 0.2s linear forwards";
 }
