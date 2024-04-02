@@ -52,6 +52,11 @@ body {
   --menu-icon-border-active: #37c6ff;
   --skilltree-skill-color: #ffffff;
   --skilltree-icon-color:#37c6ff;
+  --job-title-background: #ffffff1f;
+  --job-border-color: #37c6ff;
+  --job-point-color: #60d2ff;
+  --job-point-diameter: .6rem;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -77,6 +82,10 @@ h2 {
 h3 {
   font-size: 1rem;
   text-align: center;
+}
+
+p {
+  color: var(--p-color);
 }
 
 .page {

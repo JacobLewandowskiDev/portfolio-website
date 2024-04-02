@@ -1,0 +1,29 @@
+[
+    {
+        "jobTitle": "Fullstack Software Engineer Internship",
+        "companyName": "Codyn",
+        "date": "2021~Current",
+        "responsibilities": "• Worked on an internal company project that allowed its users to make CRUD operations & track their productivity,\n • Created a backend RESTapi written in Java Spring that connected to a PostgreSQL Database with the use of the JOOQ framework for making type safety SQL query calls. \n • Developed unit tests & E2E test for the entire application, in order to make sure it is 100% ready for production. \n • Created the frontend portion of the application using Vue3 & Vite, that consumes the API endpoints of the backend. \n • Created pull requests and made regular pushes to the projects repository, which expanded the knowledge of the companies gitflow."
+    },
+
+    {
+        "jobTitle": "HVAC & MEP Engineer | Draftsman",
+        "companyName": "Aspire Drafting",
+        "date": "2021~Current",
+        "responsibilities": "• Drafted the HVAC and MEP systems for various commercial and industrial projects using AutoCAD & Revit, ensuring compliance with industry standards and local codes. \n • Collaborated with architects, engineers, and contractors during live meetings to coordinate MEP systems and resolve a 100% of the conflicts during the design and construction phases. \n • Developed comprehensive design documentation, including specifications, and drawings. \n • Created automated Dynamo scripts using Python and C# which resulted in cutting plot sheet drawing production time by 50%"
+    },
+
+    {
+        "jobTitle": "Mechanical Engineer",
+        "companyName": "NV5",
+        "date": "2021~Current",
+        "responsibilities": "• Worked on an internal company project that allowed its users to make CRUD operations & track their productivity,\n • Created a backend RESTapi written in Java Spring that connected to a PostgreSQL Database with the use of the JOOQ framework for making type safety SQL query calls. \n • Developed unit tests & E2E test for the entire application, in order to make sure it is 100% ready for production. \n • Created the frontend portion of the application using Vue3 & Vite, that consumes the API endpoints of the backend. \n • Created pull requests and made regular pushes to the projects repository, which expanded the knowledge of the companies gitflow."
+    },
+
+    {
+        "jobTitle": "HVAC & MEP Engineer | Draftsman",
+        "companyName": "Aspire Drafting",
+        "date": "2021~Current",
+        "responsibilities": "• Drafted the HVAC and MEP systems for various commercial and industrial projects using AutoCAD & Revit, ensuring compliance with industry standards and local codes. \n • Collaborated with architects, engineers, and contractors during live meetings to coordinate MEP systems and resolve a 100% of the conflicts during the design and construction phases. \n • Developed comprehensive design documentation, including specifications, and drawings. \n • Created automated Dynamo scripts using Python and C# which resulted in cutting plot sheet drawing production time by 50%"
+    }
+]

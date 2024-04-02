@@ -18,13 +18,6 @@ export default {
     }
   },
 
-  props: {
-    email: {
-      type: String,
-      required: true,
-    },
-  },
-
   data() {
     return {
       displayEmailOverlay: false,
