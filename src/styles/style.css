@@ -52,11 +52,16 @@ body {
   --menu-icon-border-active: #37c6ff;
   --skilltree-skill-color: #ffffff;
   --skilltree-icon-color:#37c6ff;
-  --job-title-background: #ffffff1f;
+  --job-title-background: #ffffff13;
   --job-border-color: #37c6ff;
   --job-point-color: #60d2ff;
   --job-point-diameter: .6rem;
-
+  --blog-post-title-background:#ffffff13;
+  --blog-post-color-hover: #60d2ff;
+  --blog-post-title-border: #ffffff;
+  --blog-post-color: #ffffff;
+  --blog-post-info-color: #60d2ff;
+  --post-body-text-size: .9rem;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -107,4 +112,53 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: var(--menu-height);
+}
+
+.post {
+  position: relative;
+}
+
+.post__title {
+  background-color: var(--blog-post-title-background);
+  border-bottom: 0.1rem solid var(--blog-post-title-border);
+  color: var(--blog-post-color);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: linear 0.2s ease;
+}
+
+.post__title:hover {
+  color: var(--blog-post-color-hover);
+}
+
+.post__title:active {
+  animation: openPost 0.2s ease linear;
+}
+
+.post__body {
+  display: none;
+}
+
+.post__body--visible {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.post__body__info {
+  color: var(--blog-post-info-color);
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.post__body__text {
+  font-size: var(--post-body-text-size);
 }
