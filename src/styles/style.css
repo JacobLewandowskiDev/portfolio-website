@@ -62,6 +62,8 @@ body {
   --blog-post-color: #ffffff;
   --blog-post-info-color: #60d2ff;
   --post-body-text-size: .9rem;
+  --post-text-highlight-color: #60d2ff;
+  --post-text-example-background:#6d6c6c49;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -123,13 +125,14 @@ p {
   border-bottom: 0.1rem solid var(--blog-post-title-border);
   color: var(--blog-post-color);
   font-size: 1.3rem;
+
   cursor: pointer;
   transition: linear 0.2s ease;
 }
 
-.post__title:hover {
+/* .post__title:hover {
   color: var(--blog-post-color-hover);
-}
+} */
 
 .post__title:active {
   animation: openPost 0.2s ease linear;
@@ -140,8 +143,16 @@ p {
 }
 
 .post__body--visible {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 0 auto;
   animation: fadeIn 0.5s;
+}
+
+.post__title--active {
+  color: var(--blog-post-color-hover);
 }
 
 @keyframes fadeIn {
@@ -159,6 +170,25 @@ p {
   text-align: center;
 }
 
+.post__body__titleblock {
+  border-bottom: .1rem solid var(--blog-post-title-border);
+  margin-bottom: .5rem;
+}
+
 .post__body__text {
+  text-indent: 2rem;
+}
+
+.post__body__text, .post__body__text--example {
   font-size: var(--post-body-text-size);
+  text-align: left;
+}
+
+.post__body__text--example {
+  text-align: center;
+  background-color: var(--post-text-example-background);
+}
+
+.post__body__text__highlight {
+  color: var(--post-text-highlight-color);
 }

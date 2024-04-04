@@ -5,7 +5,7 @@ import JavaDevPost from "../blogPosts/JavaDevPost.vue";
 export default {
   components: {
     Navigation,
-    JavaDevPost
+    JavaDevPost,
   },
 };
 </script>
@@ -15,7 +15,7 @@ export default {
   <div class="page">
     <div class="page__container">
       <h1 class="page__container__title">DevCorner</h1>
-      <h2 class="page__container__subtitle">The Developer Blog</h2>
+      <h2 class="page__container__subtitle">A Developers Journal</h2>
       <div class="page__container__blog">
         <JavaDevPost />
         <br>
@@ -26,7 +26,6 @@ export default {
 
 <style scoped>
 .page {
-  border: 0.1rem solid yellow;
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -34,7 +33,6 @@ export default {
 }
 
 .page__container {
-  border: 0.1rem solid red;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -46,8 +44,7 @@ export default {
 }
 
 .page__container__blog {
-  border: 0.1rem solid orange;
-  width: 90%;
+  width: 75%;
   height: 100%;
 }
 </style>
