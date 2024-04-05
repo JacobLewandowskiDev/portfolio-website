@@ -26,7 +26,7 @@ body {
   width: var(--website-width);
   font-size: 18px;
   box-sizing: border-box;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(64, 64, 64) 100%);
+  background: var(--background-color);
 }
 
 :root {
@@ -35,7 +35,7 @@ body {
   --background-color: #0a0a0a;
   --font-color: #ffffff;
   --card-border-color: #ffffff38;
-  --card-link-bg-color: #ffffff38;
+  --card-link-bg-color: #ffffff28;
   --card-link-bg-color-hover: #e6e6e654;
   --card-link-bg-color-active: #37c6ff91;
   --card-link-text-color: #f0f0f0;

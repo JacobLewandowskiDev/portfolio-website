@@ -31,7 +31,7 @@ export default {
       <br />
       <h3 class="post__body__titleblock">A Brief Summary</h3>
       <p class="post__body__text">
-        Embarking on the journey of becoming a Full-Stack Java developer can
+        Embarking on the journey of becoming a Java developer can
         often feel like stepping into a vast, unexplored cave. In the dim light
         of uncertainty, every novice programmer has experienced the disorienting
         sensation of not knowing which path to take next. It's akin to standing
@@ -272,7 +272,7 @@ export default {
         Connecting our applications to a database is a fundamental aspect of
         many software projects. This step enables us to store and retrieve data,
         perform various operations on it, and interact with it dynamically. The
-        CRUD operations—Create, Read, Update, and Delete—are essential
+        CRUD operations: (Create, Read, Update, and Delete) are essential
         functionalities required for managing data within our applications. When
         it comes to connecting to a database in Java, there are several options
         available. You can use JDBC (Java Database Connectivity), which is a

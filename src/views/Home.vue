@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .page {
   height: 100vh;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(64, 64, 64) 100%);
+  background: linear-gradient(171deg, rgba(0,0,0,1) 50%, rgba(56,56,56,0.4) 100%);
 }
 
 .page__container__name {
