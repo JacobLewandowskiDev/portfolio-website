@@ -12,21 +12,21 @@ export default {
       cards: [
         {
           index: 0,
-          description: "Take a tour of my coding projects.",
-          link: "Projects",
-          name: "View Projects",
-        },
-        {
-          index: 1,
-          description: "Learn more about me.",
-          link: "About",
-          name: "About me",
-        },
-        {
-          index: 2,
           description: "Preview my blog.",
           link: "Blog",
           name: "My blog",
+        },
+        {
+          index: 1,
+          description: "Take a tour of my coding projects.",
+          link: "Portfolio",
+          name: "View Projects",
+        },
+        {
+          index: 2,
+          description: "Learn more about me.",
+          link: "About",
+          name: "About me",
         },
       ],
     };
@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .page {
   height: 100vh;
-  background: linear-gradient(171deg, rgba(0,0,0,1) 50%, rgba(56,56,56,0.4) 100%);
+  background: linear-gradient(171deg, rgba(0,0,0,1) 40%, rgba(56,56,56) 100%);
 }
 
 .page__container__name {

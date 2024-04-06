@@ -56,14 +56,16 @@ body {
   --job-border-color: #37c6ff;
   --job-point-color: #60d2ff;
   --job-point-diameter: .6rem;
-  --blog-post-title-background:#ffffff13;
+  --blog-post-title-background:#ffffff28;
   --blog-post-color-hover: #60d2ff;
   --blog-post-title-border: #ffffff;
-  --blog-post-color: #ffffff;
+  --blog-post-color: #dbdbdb;
   --blog-post-info-color: #60d2ff;
   --post-body-text-size: .9rem;
   --post-text-highlight-color: #60d2ff;
   --post-text-example-background:#6d6c6c49;
+  --project-image-border: .1rem solid #ffffff38;
+  --project-boder: .1rem solid #b8b8b8;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -77,7 +79,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -122,7 +124,6 @@ p {
 
 .post__title {
   background-color: var(--blog-post-title-background);
-  border-bottom: 0.1rem solid var(--blog-post-title-border);
   color: var(--blog-post-color);
   font-size: 1.3rem;
 
@@ -130,12 +131,8 @@ p {
   transition: linear 0.2s ease;
 }
 
-/* .post__title:hover {
+.post__title:hover {
   color: var(--blog-post-color-hover);
-} */
-
-.post__title:active {
-  animation: openPost 0.2s ease linear;
 }
 
 .post__body {
@@ -153,6 +150,7 @@ p {
 
 .post__title--active {
   color: var(--blog-post-color-hover);
+  border-bottom: 0.1rem solid var(--blog-post-title-border);
 }
 
 @keyframes fadeIn {

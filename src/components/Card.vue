@@ -13,19 +13,19 @@ export default {
   <div class="card">
     <img
       class="card__img"
+      style="border-radius: 50%"
       v-if="card.index === 0"
-      src="../assets/code-icon.svg"
+      src="../assets/blog-icon.svg"
     />
     <img
       class="card__img"
       v-if="card.index === 1"
-      src="../assets/about-icon.svg"
+      src="../assets/code-icon.svg"
     />
     <img
       class="card__img"
-      style="border-radius: 50%"
       v-if="card.index === 2"
-      src="../assets/blog-icon.svg"
+      src="../assets/about-icon.svg"
     />
     <p class="card__description">{{ card.description }}</p>
     <router-link class="card__link" :to="card.link" type="button">{{
