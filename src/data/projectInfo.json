@@ -5,5 +5,29 @@
     "techstack": "Java, Spring Boot, MySQL, HTML&CSS, JavaScript, Maven",
     "github_url": "https://github.com/JacobLewandowskiDev/Denarius-Finance-Manager",
     "live_url": "https://google.com"
+  },
+
+  {
+    "name": "Mechanical Engineer Calculator",
+    "description": "As an MEP & HVAC Engineer, I figured I'd create an online calculator that helps with the tedious portion of creating an HVAC/MEP project. This particular app allows its users to calculate the pipe/air duct diameters and sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply).",
+    "techstack": "HTML&CSS, JavaScript",
+    "github_url": "https://github.com/JacobLewandowskiDev/Denarius-Finance-Manager",
+    "live_url": "https://google.com"
+  },
+
+  {
+    "name": "Chatroom",
+    "description": "Chat Room - A chat room app based on WebSockets. Once a user has typed in a username that they will be using in the web app they can send messages in the global chat room for all of the connected users to see.",
+    "techstack": "Java, Spring Boot, HTML&CSS, JavaScript, Maven",
+    "github_url": "https://github.com/JacobLewandowskiDev/Chat-Room",
+    "live_url": "https://google.com"
+  },
+
+  {
+    "name": "Gwent: The Card Game",
+    "description": "A 2D RPG Sprite based multiplayer game. It features a server room for 10 players that can interact with each other via in-game chat, and can challenge each other to a game of gwent. Gwent is a turn based card game from the Witcher 3: Wild hunt vidoe game. The games serverside is written in Java, and runs on a firebase database.",
+    "techstack": "Java, Spring Boot, Firebase, PostgreSQL, HTML&CSS, JavaScript, Maven, WebSockets",
+    "github_url": "https://www.playgwent.com/pl/",
+    "live_url": "https://google.com"
   }
 ]

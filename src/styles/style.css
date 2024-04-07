@@ -65,7 +65,10 @@ body {
   --post-text-highlight-color: #60d2ff;
   --post-text-example-background:#6d6c6c49;
   --project-image-border: .1rem solid #ffffff38;
-  --project-boder: .1rem solid #b8b8b8;
+  --project-title-border: transparent;
+  --project-selection-color: #bbbbbb;
+  --project-selection-button-bg: #4e4e4e; 
+  --project-selection-button-bg-active: #818181; 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
