@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
-  scroll-behavior: smooth;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -66,9 +66,17 @@ body {
   --post-text-example-background:#6d6c6c49;
   --project-image-border: .1rem solid #ffffff38;
   --project-title-border: transparent;
-  --project-selection-color: #bbbbbb;
+  --project-selection-color: #ebebeb;
   --project-selection-button-bg: #4e4e4e; 
-  --project-selection-button-bg-active: #818181; 
+  --project-selection-button-bg-hover: #818181; 
+  --project-selection-button-bg-active: #37c6ffe1; 
+  --project-selection-button-bg-inactive: #363636; 
+  --project-selection-button-color-active: #ffffff;
+  --project-selection-button-color-inactive: #444444;
+  --button-font: "Electrolize", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --button-border: .1rem solid #00bbf2;
+  --button-bg: #0092be;
+  --button-bg-hover: #00a8db;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
