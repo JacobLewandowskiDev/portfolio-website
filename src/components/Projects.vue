@@ -90,12 +90,16 @@ export default {
       </div>
       <br />
       <h3>Project Tech Stack</h3>
-      <div class="details__info__techstack">
-
-      </div>
+      <ul class="details__info__techstack">
+        <li v-for="tech in projects[currentProject].techstack">
+          {{ tech.name }}
+        </li>
+      </ul>
       <br />
       <h3>Project Description</h3>
-      <p class="details__info__description">{{ projects[currentProject].description }}</p>
+      <p class="details__info__description">
+        {{ projects[currentProject].description }}
+      </p>
     </div>
   </div>
 </template>
@@ -162,6 +166,7 @@ export default {
   border-radius: 0.3rem;
   font-size: 1.5rem;
   color: var(--project-selection-color);
+  transition: ease .2s;
 }
 
 .project__selection__button:hover:not(.project__selection__button--inactive) {
@@ -235,7 +240,8 @@ export default {
   width: 50%;
   height: 90vh;
   max-height: 90vh;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 0.5rem;
 }
 
@@ -243,6 +249,7 @@ export default {
   display: flex;
   justify-content: center;
   word-break: keep-all;
+  margin: 1rem 0;
 }
 
 .details__info__links__link {
@@ -255,11 +262,37 @@ export default {
   font: var(--button-font);
   font-weight: bold;
   width: 6rem;
-  height: 3rem;
-  margin: 0 2rem;
+  height: 2rem;
+  margin: 0 1rem;
   text-align: center;
   border: var(--button-border);
   border-radius: 0.3rem;
+  transition: ease .2s;
+}
+
+.details__info__techstack {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin: .5rem 0;
+}
+
+.details__info__techstack li {
+  background: var(--techstack-bg);
+  border: var(--techstack-border);
+  width: 5rem;
+  min-width: 5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: .5rem;
 }
 
 .details__info__links__link:hover {

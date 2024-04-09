@@ -77,6 +77,8 @@ body {
   --button-border: .1rem solid #00bbf2;
   --button-bg: #0092be;
   --button-bg-hover: #00a8db;
+  --techstack-bg:#5f5f5f;
+  --techstack-border: 0.1rem solid #888888;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
