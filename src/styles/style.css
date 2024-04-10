@@ -203,3 +203,14 @@ p {
 .post__body__text__highlight {
   color: var(--post-text-highlight-color);
 }
+
+@media screen and (max-width: 470px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: .8rem;
+  }
+}

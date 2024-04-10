@@ -43,14 +43,14 @@ export default {
   width: 12rem;
   height: 15rem;
   margin: 0 1rem;
-  border-right: .1rem solid;
-  border-bottom: .1rem solid;
+  border-right: 0.1rem solid;
+  border-bottom: 0.1rem solid;
   border-color: var(--card-border-color);
   border-radius: 24px;
   padding: 2rem;
-  box-shadow: .3rem .6rem .9rem rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(.9rem);
-  -webkit-backdrop-filter: blur(.9rem);
+  box-shadow: 0.3rem 0.6rem 0.9rem rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.9rem);
+  -webkit-backdrop-filter: blur(0.9rem);
 }
 
 .card__img {
@@ -77,13 +77,13 @@ export default {
   bottom: 10%;
   padding: 0.5rem;
   background-color: var(--card-link-bg-color);
-  box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(.6rem);
-  -webkit-backdrop-filter: blur(.6rem);
-  border-radius: .4rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.6rem);
+  -webkit-backdrop-filter: blur(0.6rem);
+  border-radius: 0.4rem;
   font-weight: 600;
-  transition: linear .1s;
-  border: .1rem solid #ffffff38;
+  transition: linear 0.1s;
+  border: 0.1rem solid #ffffff38;
 }
 
 .card__link:hover {
@@ -91,10 +91,42 @@ export default {
   color: var(--card-link-text-color-hover);
 }
 
-
 .card__link:active {
   background-color: var(--card-link-bg-color-active);
-  box-shadow: 0 0 .6rem #37C6FF;
-  border: .1rem solid #37C6FF;
+  box-shadow: 0 0 0.6rem #37c6ff;
+  border: 0.1rem solid #37c6ff;
+}
+
+@media screen and (max-width: 1089px) {
+  .card {
+    margin: 0 .2rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .card {
+    margin: 1rem 1rem;
+    padding: 1rem;
+    height: 12rem;
+    width: 8rem;
+  }
+
+  .card__img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .card {
+    margin: 0rem .25rem;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .card {
+    margin: 1rem .25rem;
+  }
 }
 </style>

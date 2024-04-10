@@ -38,9 +38,11 @@ export default {
   <div class="page">
     <Navigation />
     <div class="page__container">
-      <h1 class="page__container__name">Jacob Lewandowski</h1>
-      <div class="page__container__tiles">
-        <Card v-for="(card, index) in cards" :key="index" :card="card" />
+      <div class="page__container__content">
+        <h1 class="page__container__content__name">Jacob Lewandowski</h1>
+        <div class="page__container__content__tiles">
+          <Card v-for="(card, index) in cards" :key="index" :card="card" />
+        </div>
       </div>
     </div>
   </div>
@@ -49,26 +51,97 @@ export default {
 <style scoped>
 .page {
   height: 100vh;
-  background: linear-gradient(171deg, rgba(0,0,0,1) 40%, rgba(56,56,56) 100%);
+  background: linear-gradient(
+    171deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(56, 56, 56) 100%
+  );
 }
 
-.page__container__name {
+.page__container {
+  border: 0.1rem solid red;
+  width: 100%;
+  height: 100%;
+}
+
+.page__container__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: 0.1rem solid aqua;
+}
+
+.page__container__content__name {
   display: flex;
   width: fit-content;
-  margin-left: 15rem;
   line-height: 1;
   word-break: keep-all;
-  margin-bottom: 4rem;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+  justify-content: flex-end;
+  align-items: center;
+  border: 0.1rem solid orange;
 }
 
-.page__container__tiles {
+.page__container__content__tiles {
   display: flex;
   justify-content: center;
+  width: fit-content;
+  padding-top: 2rem;
   align-items: center;
   flex-wrap: wrap;
+  border: 0.1rem solid green;
 }
 
 .card:nth-child(2) {
   margin-top: -3rem;
+}
+
+@media screen and (max-width: 1089px) {
+  .page__container__content__name {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .page__container__content__tiles {
+    padding: 0;
+  }
+  .card:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .page__container__content__name {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .page {
+    height: 100%;
+    background: var(--background-color);
+  }
+
+  .card:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .page {
+    background: var(--background-color);
+  }
+
+  .page__container__content__name {
+    width: 100%;
+    font-size: 1.7rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
 }
 </style>

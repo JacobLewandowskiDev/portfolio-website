@@ -234,4 +234,31 @@ export default {
     opacity: 100%;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .menu__media__item {
+    margin: 0 0.2rem;
+  }
+
+  .email--overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .email--overlay__content {
+    width: 95%;
+  }
+
+  .email--overlay__content h1 {
+    font-size: 1.8rem;
+  }
+  .email--overlay__content h2 {
+    font-size: .75rem;
+  }
+
+  .email--overlay__close {
+    top: 1rem;
+    right: 1rem;
+  }
+}
 </style>
