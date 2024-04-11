@@ -31,9 +31,9 @@ export default {
       <br />
       <h3 class="post__body__titleblock">A Brief Summary</h3>
       <p class="post__body__text">
-        Embarking on the journey of becoming a Java developer can
-        often feel like stepping into a vast, unexplored cave. In the dim light
-        of uncertainty, every novice programmer has experienced the disorienting
+        Embarking on the journey of becoming a Java developer can often feel
+        like stepping into a vast, unexplored cave. In the dim light of
+        uncertainty, every novice programmer has experienced the disorienting
         sensation of not knowing which path to take next. It's akin to standing
         at the entrance, staring into the darkness, and wondering how to
         navigate the labyrinthine complexities ahead. But fear not! With the
@@ -301,4 +301,18 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 470px) {
+  .post {
+    width: 100%;
+  }
+
+  .post__title, .post__body__titleblock {
+    font-size: 0.8rem;
+  }
+
+  .post__body__text {
+    font-size: .8rem;
+  }
+}
+</style>

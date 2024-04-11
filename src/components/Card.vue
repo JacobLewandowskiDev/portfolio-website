@@ -129,4 +129,11 @@ export default {
     margin: 1rem .25rem;
   }
 }
+
+
+@media screen and (max-height: 506px) {
+  .card {
+    margin: 0 .25rem;
+  }
+}
 </style>

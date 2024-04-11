@@ -51,11 +51,16 @@ export default {
 </template>
 
 <style scoped>
+.page__container {
+  border: .1rem solid red;
+}
+
 .aboutme {
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: .1rem solid yellow;
 }
 
 .aboutme__title {
@@ -70,6 +75,7 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
+  border: .1rem solid orange;
 }
 
 .aboutme__jakub__img {
@@ -109,5 +115,21 @@ export default {
 
 .resume {
   padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .page__container {
+    width: 100%;
+  }
+
+  .aboutme__jakub {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme__jakub {
+    flex-direction: column;
+  }
 }
 </style>

@@ -59,7 +59,6 @@ export default {
 }
 
 .page__container {
-  border: 0.1rem solid red;
   width: 100%;
   height: 100%;
 }
@@ -67,21 +66,19 @@ export default {
 .page__container__content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: max-content;
   align-items: center;
-  border: 0.1rem solid aqua;
 }
 
 .page__container__content__name {
   display: flex;
-  width: fit-content;
+  width: 100%;
   line-height: 1;
   word-break: keep-all;
   text-align: center;
   padding: 1rem 0 2rem 0;
   justify-content: flex-end;
   align-items: center;
-  border: 0.1rem solid orange;
 }
 
 .page__container__content__tiles {
@@ -91,7 +88,6 @@ export default {
   padding-top: 2rem;
   align-items: center;
   flex-wrap: wrap;
-  border: 0.1rem solid green;
 }
 
 .card:nth-child(2) {
@@ -100,7 +96,6 @@ export default {
 
 @media screen and (max-width: 1089px) {
   .page__container__content__name {
-    width: 80%;
     font-size: 2.5rem;
   }
 }
@@ -114,20 +109,32 @@ export default {
   }
 }
 
-@media screen and (max-width: 739px) {
-  .page__container__content__name {
-    width: 90%;
-  }
-}
-
 @media screen and (max-width: 665px) {
   .page {
     height: 100%;
     background: var(--background-color);
   }
 
+  .page__container__content {
+    width: 100%;
+  }
+
   .card:nth-child(2) {
     margin: 0;
+  }
+}
+
+@media screen and (max-height: 506px) {
+  .page__container__content__name {
+    margin-top: 2rem;
+  }
+
+  .page__container {
+    height: 100%;
+  }
+
+  .page {
+    height: 100%;
   }
 }
 
@@ -137,7 +144,6 @@ export default {
   }
 
   .page__container__content__name {
-    width: 100%;
     font-size: 1.7rem;
     margin: 0;
     margin-top: 1rem;

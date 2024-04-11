@@ -47,4 +47,22 @@ export default {
   width: 75%;
   height: 100%;
 }
+
+@media screen and (max-width:1024px) {
+  .page__container {
+    margin-top: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page__container__blog {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .page__container__subtitle {
+    width: 100%;
+  }
+}
 </style>
