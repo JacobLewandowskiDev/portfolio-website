@@ -60,7 +60,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: .1rem solid yellow;
+  align-items: center;
 }
 
 .aboutme__title {
@@ -75,7 +75,6 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
-  border: .1rem solid orange;
 }
 
 .aboutme__jakub__img {
@@ -123,13 +122,35 @@ export default {
   }
 
   .aboutme__jakub {
-    width: 100%;
+    width: 95%;
+    margin: 1rem 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .aboutme__jakub {
     flex-direction: column;
+  }
+
+  .aboutme__jakub__summary__name {
+    display: none;
+  }
+
+  .aboutme__jakub__summary {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .aboutme__jakub__summary__desc {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .aboutme__jakub__img {
+    width: 10rem;
+    height: 10rem;
   }
 }
 </style>

@@ -106,30 +106,32 @@ export default {
 
 <style scoped>
 .project {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 58%;
+  min-width: 30rem;
   border-radius: 0.3rem;
 }
 
 .project__info {
   position: relative;
-  width: 80%;
+  width: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: max-content;
+  width: 100%;
   height: 100%;
   border: var(--project-image-border);
   border-radius: 0.3rem;
 }
 
 .project__info__img {
-  width: 40rem;
-  height: 23rem;
+  width: 100%;
   border-bottom: none;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -137,13 +139,16 @@ export default {
 
 .project__info__selection {
   display: flex;
+  position: relative;
 }
 
 .project__info__title {
   position: absolute;
-  bottom: 0.1rem;
+  bottom: 0.05rem;
   background-color: #00000094;
-  width: 99.9%;
+  width: 100%;
+  font-size: 1.2rem;
+  word-break: keep-all;
   border-radius: 0.3rem;
 }
 
@@ -162,11 +167,12 @@ export default {
   cursor: pointer;
   border: var(--project-image-border);
   width: 3rem;
+  min-width: 50px;
   height: 2rem;
   border-radius: 0.3rem;
   font-size: 1.5rem;
   color: var(--project-selection-color);
-  transition: ease .2s;
+  transition: ease 0.2s;
 }
 
 .project__selection__button:hover:not(.project__selection__button--inactive) {
@@ -199,8 +205,9 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  top: -8vh;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
   z-index: 10;
   background: #0a0a0a;
 }
@@ -262,12 +269,13 @@ export default {
   font: var(--button-font);
   font-weight: bold;
   width: 6rem;
+  min-width: 4rem;
   height: 2rem;
   margin: 0 1rem;
   text-align: center;
   border: var(--button-border);
   border-radius: 0.3rem;
-  transition: ease .2s;
+  transition: ease 0.2s;
 }
 
 .details__info__techstack {
@@ -277,7 +285,7 @@ export default {
   width: 100%;
   flex-direction: row;
   justify-content: center;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .details__info__techstack li {
@@ -289,10 +297,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   text-align: center;
   font-weight: bold;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .details__info__links__link:hover {
@@ -317,5 +325,51 @@ export default {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #37c6ff;
+}
+
+@media screen and (max-width: 1024px) {
+  .project {
+    width: 80%;
+    min-width: 10rem;
+  }
+
+  .project__info__title {
+    font-size: 1rem;
+    line-height: 1rem;
+    border-radius: 0.1rem;
+    bottom: 0.05rem;
+  }
+
+  .details__info {
+    width: 75%;
+  }
+
+  .details__close {
+    top: .2rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .details__info {
+    width: 95%;
+  }
+
+  .details__close {
+    transform: scale(.7);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .project__info__title {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  .details__info__links__link {
+    margin: 0 .25rem;
+  }
 }
 </style>

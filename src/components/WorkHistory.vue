@@ -5,12 +5,12 @@ import ResumeRole from "./ResumeRole.vue";
 export default {
   components: {
     ResumeHistory,
-    ResumeRole
+    ResumeRole,
   },
 
   data() {
     return {
-      career: ResumeHistory
+      career: ResumeHistory,
     };
   },
 };
@@ -20,8 +20,12 @@ export default {
   <div class="history">
     <h2 class="history__title">Professional Experience</h2>
     <ul class="history__box">
-      <li v-for="(role, index) in career" :key="index" class="history__box__role">
-        <ResumeRole :role="role" :roleIndex="index"/>
+      <li
+        v-for="(role, index) in career"
+        :key="index"
+        class="history__box__role"
+      >
+        <ResumeRole :role="role" :roleIndex="index" />
       </li>
     </ul>
   </div>
@@ -50,16 +54,27 @@ export default {
 }
 
 .history__box__role {
-  border-right: .1rem solid var(--job-border-color);
+  border-right: 0.1rem solid var(--job-border-color);
   width: 50%;
-  margin-left: .07rem;
+  margin-left: 0.08rem;
 }
 
 .history__box__role:nth-child(even) {
-  margin-left: auto; /* Push even elements to the right */
+  margin-left: auto;
   border: none;
-  border-left: .1rem solid var(--job-border-color);
+  border-left: 0.1rem solid var(--job-border-color);
 }
 
+@media screen and (max-width: 620px) {
+  .history__box__role {
+    border-right: none;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 
+  .history__box__role:nth-child(even) {
+    margin-left: 0;
+    border-left: none;
+  }
+}
 </style>

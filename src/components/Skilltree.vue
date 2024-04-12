@@ -68,4 +68,10 @@ export default {
   font-weight: bold;
   color: var(--skilltree-skill-color);
 }
+
+@media screen and (max-width: 426px) {
+  .skilltree__title {
+    font-size: 1rem;
+  }
+}
 </style>
