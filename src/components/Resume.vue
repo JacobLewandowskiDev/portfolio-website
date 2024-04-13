@@ -38,6 +38,7 @@ export default {
 }
 
 .resume__history {
+  margin-top: 3rem;
   width: 90%;
 }
 </style>

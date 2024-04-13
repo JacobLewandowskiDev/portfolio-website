@@ -51,15 +51,12 @@ export default {
 </template>
 
 <style scoped>
-.page__container {
-  border: .1rem solid red;
-}
-
 .aboutme {
   height: auto;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -74,7 +71,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 
 .aboutme__jakub__img {

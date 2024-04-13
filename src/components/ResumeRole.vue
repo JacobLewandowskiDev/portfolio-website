@@ -51,6 +51,7 @@ export default {
 .job__info {
   padding: 0.4rem;
   text-align: center;
+  min-height: 3rem;
 }
 
 .job__point--left,

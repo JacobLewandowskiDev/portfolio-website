@@ -31,6 +31,7 @@ export default {
 .page__container {
   height: 100%;
   min-height: 90vh;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 1024px) {

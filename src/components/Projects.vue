@@ -137,11 +137,6 @@ export default {
   cursor: pointer;
 }
 
-.project__info__selection {
-  display: flex;
-  position: relative;
-}
-
 .project__info__title {
   position: absolute;
   bottom: 0.05rem;
@@ -153,7 +148,7 @@ export default {
 }
 
 .project__selection {
-  padding-top: 0.2rem;
+  padding-top: 0.5rem;
   width: 30%;
   display: flex;
   justify-content: center;
