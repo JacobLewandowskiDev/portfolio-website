@@ -125,10 +125,7 @@ export default {
       effect.render();
       requestAnimationFrame(animate);
     }
-
-    setTimeout(() => {
       animate();
-    }, 2000);
   },
 };
 </script>
