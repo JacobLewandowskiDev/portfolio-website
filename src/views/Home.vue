@@ -1,10 +1,13 @@
 <script>
 import Card from "../components/Card.vue";
 import Navigation from "../components/Navigation.vue";
+import FlowField from "../components/FlowField.vue";
+
 export default {
   components: {
     Card: Card,
     Navigation: Navigation,
+    FlowField: FlowField,
   },
 
   data() {
@@ -29,13 +32,29 @@ export default {
           name: "About me",
         },
       ],
+      showFlowField: window.innerWidth >= 640
     };
   },
+
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize);
+  },
+
+  methods: {
+    handleResize() {
+      this.showFlowField = window.innerWidth >= 640;
+    }
+  }
 };
 </script>
 
 <template>
   <div class="page">
+    <FlowField v-if="showFlowField" />
     <Navigation />
     <div class="page__container">
       <div class="page__container__content">
@@ -61,6 +80,7 @@ export default {
 .page__container {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .page__container__content {
@@ -68,6 +88,7 @@ export default {
   flex-direction: column;
   width: max-content;
   align-items: center;
+  z-index: 10;
 }
 
 .page__container__content__name {

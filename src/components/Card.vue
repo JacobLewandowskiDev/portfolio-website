@@ -49,7 +49,7 @@ export default {
   border-radius: 24px;
   padding: 2rem;
   box-shadow: 0.3rem 0.6rem 0.9rem rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(0.9rem);
+  backdrop-filter: blur(0.25rem);
   -webkit-backdrop-filter: blur(0.9rem);
 }
 
