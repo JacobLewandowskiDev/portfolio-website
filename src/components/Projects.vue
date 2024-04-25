@@ -28,15 +28,6 @@ export default {
     toggleDetails() {
       this.isDetails = !this.isDetails;
     },
-
-    getImgUrl(index) {
-      switch (index) {
-        case "0": return "src/assets/denarius-app.png"; 
-        case "1": return "src/assets/calculator-app.png"; 
-        case "2": return "src/assets/chatroom-app.png"; 
-        case "3": return "src/assets/gwent-app.png"; 
-      }
-    }
   },
 };
 </script>
@@ -46,7 +37,7 @@ export default {
     <div class="project__info">
       <img
         class="project__info__img"
-        :src="getImgUrl(projects[currentProject].imgUrl)"
+        :src="projects[currentProject].imgUrl"
         @click="toggleDetails"
       />
       <h2 class="project__info__title">{{ projects[currentProject].name }}</h2>
