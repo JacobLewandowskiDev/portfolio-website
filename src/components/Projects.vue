@@ -34,6 +34,14 @@ export default {
 
 <template>
   <div class="project">
+    <div style="visibility: hidden; display: none; position: absolute;">
+      <img src="../assets/chatroom-app.png">
+      <img src="../assets/calculator-app.png">
+      <img src="../assets/denarius-app.png">
+      <img src="../assets/gwent-app.png">
+      <img src="../assets/about-icon.svg">
+      <img src="../assets/code-icon.svg">
+    </div>
     <div class="project__info">
       <img
         class="project__info__img"
