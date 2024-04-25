@@ -4,6 +4,7 @@ import denarius from "../assets/denarius-app.png";
 import calculator from "../assets/calculator-app.png";
 import chatroom from "../assets/chatroom-app.png";
 import gwent from "../assets/gwent-app.png";
+import prodTracker from "../assets/prodtracker-app.png";
 
 
 export default {
@@ -36,10 +37,11 @@ export default {
 
     getImg(image) {
       switch(image) {
-        case "0": return denarius;
-        case "1": return calculator;
-        case "2": return chatroom;
-        case "3": return gwent;
+        case "0": return prodTracker;
+        case "1": return denarius;
+        case "2": return calculator;
+        case "3": return chatroom;
+        case "4": return gwent;
       }
     }
   },
