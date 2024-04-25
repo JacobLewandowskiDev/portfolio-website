@@ -1,7 +1,7 @@
 [
   {
     "name": "Denarius",
-    "imgUrl": "src/assets/denarius-app.png",
+    "image": "0",
     "description": "Denarius - The name of my application originates from a silver coin used in ancient Rome as a form of payment. This web app assists its users in managing their finances. The client-side of the app after logging in can set up saving goals they wish to achieve by a certain date and track their expenses. The backend then takes care of storing that data and performing all of the calculations upon a specific endpoint request call. That data is then presented to the user for their viewing. The web app can also track the information of the top 20 trading Cryptocurrencies and updates the list every 2 minutes by pulling the data from coinmarketcap.com using the CoinMarketCap API.",
     "techstack": [
       {
@@ -28,7 +28,7 @@
   },
   {
     "name": "Mechanical Engineer Calculator",
-    "imgUrl": "src/assets/calculator-app.png",
+    "image": "1",
     "description": "As an MEP & HVAC Engineer, I figured I'd create an online calculator that helps with the tedious portion of creating an HVAC/MEP project. This particular app allows its users to calculate the pipe/air duct diameters and sizes in 4 different specializations (Heating, Ventilation, Water supply, and gas supply).",
     "techstack": [
       {
@@ -43,7 +43,7 @@
   },
   {
     "name": "Chatroom",
-    "imgUrl": "src/assets/chatroom-app.png",
+    "image": "2",
     "description": "Chat Room - A chat room app based on WebSockets. Once a user has typed in a username that they will be using in the web app they can send messages in the global chat room for all of the connected users to see.",
     "techstack": [
       {
@@ -67,7 +67,7 @@
   },
   {
     "name": "Gwent: The Card Game",
-    "imgUrl": "src/assets/gwent-app.png",
+    "image": "3",
     "description": "A 2D RPG Sprite based multiplayer game. It features a server room for 10 players that can interact with each other via in-game chat, and can challenge each other to a game of gwent. Gwent is a turn based card game from the Witcher 3: Wild hunt vidoe game. The games serverside is written in Java, and runs on a firebase database.",
     "techstack": [
       {

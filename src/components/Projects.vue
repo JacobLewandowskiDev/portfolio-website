@@ -1,5 +1,10 @@
 <script>
 import Projects from "../data/projectInfo.json";
+import denarius from "../assets/denarius-app.png";
+import calculator from "../assets/calculator-app.png";
+import chatroom from "../assets/chatroom-app.png";
+import gwent from "../assets/gwent-app.png";
+
 
 export default {
   data() {
@@ -28,6 +33,15 @@ export default {
     toggleDetails() {
       this.isDetails = !this.isDetails;
     },
+
+    getImg(image) {
+      switch(image) {
+        case "0": return denarius;
+        case "1": return calculator;
+        case "2": return chatroom;
+        case "3": return gwent;
+      }
+    }
   },
 };
 </script>
@@ -35,9 +49,10 @@ export default {
 <template>
   <div class="project">
     <div class="project__info">
+      <img style="display: none;" :src="denarius">
       <img
         class="project__info__img"
-        :src="projects[currentProject].imgUrl"
+        :src="getImg(projects[currentProject].image)"
         @click="toggleDetails"
       />
       <h2 class="project__info__title">{{ projects[currentProject].name }}</h2>
