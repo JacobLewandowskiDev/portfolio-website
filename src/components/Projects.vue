@@ -28,24 +28,25 @@ export default {
     toggleDetails() {
       this.isDetails = !this.isDetails;
     },
+
+    getImgUrl(index) {
+      switch (index) {
+        case "0": return "src/assets/denarius-app.png"; 
+        case "1": return "src/assets/calculator-app.png"; 
+        case "2": return "src/assets/chatroom-app.png"; 
+        case "3": return "src/assets/gwent-app.png"; 
+      }
+    }
   },
 };
 </script>
 
 <template>
   <div class="project">
-    <div style="visibility: hidden; display: none; position: absolute;">
-      <img src="../assets/chatroom-app.png">
-      <img src="../assets/calculator-app.png">
-      <img src="../assets/denarius-app.png">
-      <img src="../assets/gwent-app.png">
-      <img src="../assets/about-icon.svg">
-      <img src="../assets/code-icon.svg">
-    </div>
     <div class="project__info">
       <img
         class="project__info__img"
-        :src="projects[currentProject].imgUrl"
+        :src="getImgUrl(projects[currentProject].imgUrl)"
         @click="toggleDetails"
       />
       <h2 class="project__info__title">{{ projects[currentProject].name }}</h2>
