@@ -254,7 +254,7 @@ export default {
         choice on which one they use in the company.
       </p>
       <br />
-      <h3 class="post__body__titleblock">HTTP</h3>
+      <h3 class="post__body__titleblock">HTTP & REST API</h3>
       <p class="post__body__text">
         When you build backend applications, and backend applications you shall
         build with Java. More than likely you will be creating or exposing some

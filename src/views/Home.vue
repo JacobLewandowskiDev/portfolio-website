@@ -40,6 +40,11 @@ export default {
     window.addEventListener('resize', this.handleResize);
   },
 
+  destroyed() {
+        window.cancelAnimationFrame(this.id);
+        this.id = undefined;
+    },
+
   beforeUnmount() {
     window.removeEventListener('resize', this.handleResize);
   },
@@ -127,6 +132,12 @@ export default {
   }
   .card:nth-child(2) {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page__container__content__name {
+    justify-content: center;
   }
 }
 

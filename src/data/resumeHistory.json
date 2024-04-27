@@ -1,12 +1,5 @@
 [
     {
-        "jobTitle": "Fullstack Software Engineer Internship",
-        "companyName": "Codyn",
-        "date": "2021~Current",
-        "responsibilities": "• Engaged in an internal company initiative aimed at facilitating CRUD operations and enhancing productivity tracking for users. \n • Orchestrated the development of a backend RESTful API in Java Spring, seamlessly integrating with a PostgreSQL Database through the JOOQ framework to ensure robustness and type safety in SQL query execution. \n •  Implemented rigorous unit and end-to-end (E2E) testing protocols across the application spectrum, guaranteeing its readiness for deployment to production environments. \n • Spearheaded the creation of the frontend interface utilizing Vue3 and Vite, facilitating seamless interaction with backend API endpoints. \n • Contributed to the project's version control process by generating pull requests and maintaining a consistent cadence of updates to the repository, fostering a deeper understanding of the company's Git workflow."
-    },
-
-    {
         "jobTitle": "HVAC & MEP Engineer | Draftsman",
         "companyName": "Aspire Drafting",
         "date": "2021~Current",

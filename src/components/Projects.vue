@@ -51,7 +51,6 @@ export default {
 <template>
   <div class="project">
     <div class="project__info">
-      <img style="display: none;" :src="denarius">
       <img
         class="project__info__img"
         :src="getImg(projects[currentProject].image)"
