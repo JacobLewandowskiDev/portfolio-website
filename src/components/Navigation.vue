@@ -251,7 +251,6 @@ export default {
   opacity: 0;
   position: fixed;
   width: 100vw;
-  height: 100%;
   height: -webkit-fill-available;
   min-height: -webkit-fill-available;
   top: 0;
