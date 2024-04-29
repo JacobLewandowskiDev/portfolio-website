@@ -220,7 +220,7 @@ export default {
   min-height: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   background: #0a0a0a;
 }
 
@@ -369,6 +369,17 @@ export default {
 
   .details__close {
     transform: scale(.7);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 }
 

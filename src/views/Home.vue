@@ -15,45 +15,45 @@ export default {
       cards: [
         {
           index: 0,
-          description: "Preview my blog.",
-          link: "Blog",
-          name: "My blog",
-        },
-        {
-          index: 1,
-          description: "Take a tour of my coding projects.",
+          description: "View my projects.",
           link: "Portfolio",
           name: "View Projects",
         },
         {
-          index: 2,
+          index: 1,
           description: "Learn more about me.",
           link: "About",
           name: "About me",
         },
+        {
+          index: 2,
+          description: "Preview my blog.",
+          link: "Blog",
+          name: "My blog",
+        },
       ],
-      showFlowField: window.innerWidth >= 665 // Change also the value in methods: handleResize() method when modifying.
+      showFlowField: window.innerWidth >= 665, // Change also the value in methods: handleResize() method when modifying.
     };
   },
 
   mounted() {
-    window.addEventListener('resize', this.handleResize);
+    window.addEventListener("resize", this.handleResize);
   },
 
   destroyed() {
-        window.cancelAnimationFrame(this.id);
-        this.id = undefined;
-    },
+    window.cancelAnimationFrame(this.id);
+    this.id = undefined;
+  },
 
   beforeUnmount() {
-    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener("resize", this.handleResize);
   },
 
   methods: {
     handleResize() {
       this.showFlowField = window.innerWidth >= 665;
-    }
-  }
+    },
+  },
 };
 </script>
 
