@@ -184,7 +184,7 @@ export default {
   width: var(--menu-width);
   height: var(--menu-height);
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
 }
@@ -196,7 +196,7 @@ export default {
   align-items: center;
   height: inherit;
   list-style-type: none;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu__media__item {
@@ -252,6 +252,7 @@ export default {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  min-height: 100%;
   top: 0;
   left: 0;
   background-color: var(--background-color);
