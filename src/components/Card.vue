@@ -13,7 +13,6 @@ export default {
   <div class="card">
     <img
       class="card__img"
-      style="border-radius: 50%"
       v-if="card.index === 0"
       src="../assets/code-icon.svg"
     />
@@ -24,6 +23,7 @@ export default {
     />
     <img
       class="card__img"
+      style="border-radius: 50%"
       v-if="card.index === 2"
       src="../assets/blog-icon.svg"
     />
