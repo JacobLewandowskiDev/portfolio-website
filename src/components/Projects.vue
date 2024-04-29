@@ -35,6 +35,7 @@ export default {
       this.isDetails = !this.isDetails;
     },
 
+    // Image index pulled from projectInfo.json file. Make sure to make index match with correct IMG url in assets.
     getImg(image) {
       switch(image) {
         case "0": return prodTracker;

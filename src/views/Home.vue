@@ -32,7 +32,7 @@ export default {
           name: "About me",
         },
       ],
-      showFlowField: window.innerWidth >= 640
+      showFlowField: window.innerWidth >= 665 // Change also the value in methods: handleResize() method when modifying.
     };
   },
 
@@ -51,7 +51,7 @@ export default {
 
   methods: {
     handleResize() {
-      this.showFlowField = window.innerWidth >= 640;
+      this.showFlowField = window.innerWidth >= 665;
     }
   }
 };

@@ -8,7 +8,6 @@
 html {
   overflow: scroll;
   overflow-x: hidden;
-  height: -webkit-fill-available;
 }
 
 ::-webkit-scrollbar {
@@ -28,7 +27,6 @@ body {
   font-size: 18px;
   box-sizing: border-box;
   background: var(--background-color);
-  height: -webkit-fill-available;
 }
 
 :root {

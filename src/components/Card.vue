@@ -99,7 +99,7 @@ export default {
 
 @media screen and (max-width: 1089px) {
   .card {
-    margin: 0 .2rem;
+    margin: 0 0.2rem;
   }
 }
 
@@ -120,20 +120,25 @@ export default {
 
 @media screen and (max-width: 779px) {
   .card {
-    margin: 0rem .25rem;
+    margin: 0rem 0.25rem;
   }
 }
 
 @media screen and (max-width: 665px) {
   .card {
-    margin: 1rem .25rem;
+    margin: 1rem 0.25rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      150deg,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(56, 56, 56, 1) 94%
+    );
   }
 }
 
-
 @media screen and (max-height: 506px) {
   .card {
-    margin: 0 .25rem;
+    margin: 0 0.25rem;
   }
 }
 </style>

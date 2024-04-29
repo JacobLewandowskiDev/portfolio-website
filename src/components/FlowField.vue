@@ -3,6 +3,8 @@ export default {
   data() {
     return {
       animationFrameId: null,
+      animationCount: 0,
+      maxAnimationCount: 4000,
     };
   },
 
@@ -142,6 +144,13 @@ export default {
         if (this.$route.path !== "/Home" && this.$route.path !== "/") {
           cancelAnimationFrame(this.animationFrameId);
           console.log("Animation stopped");
+        }
+        this.animationCount++;
+        if (this.animationCount >= this.maxAnimationCount) {
+          // Reset particles
+          effect.render();
+          this.animationCount = 0; // Reset animation count
+          console.log("Particles reset");
         }
       };
       animate();
