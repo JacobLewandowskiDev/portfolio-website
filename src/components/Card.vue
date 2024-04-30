@@ -13,19 +13,14 @@ export default {
   <div class="card">
     <img
       class="card__img"
+      style="border-radius: 50%"
       v-if="card.index === 0"
-      src="../assets/code-icon.svg"
-    />
-    <img
-      class="card__img"
-      v-if="card.index === 1"
       src="../assets/about-icon.svg"
     />
     <img
       class="card__img"
-      style="border-radius: 50%"
-      v-if="card.index === 2"
-      src="../assets/blog-icon.svg"
+      v-if="card.index === 1"
+      src="../assets/code-icon.svg"
     />
     <p class="card__description">{{ card.description }}</p>
     <router-link class="card__link" :to="card.link" type="button">{{
@@ -42,7 +37,7 @@ export default {
   flex-direction: column;
   width: 12rem;
   height: 15rem;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   border-right: 0.1rem solid;
   border-bottom: 0.1rem solid;
   border-color: var(--card-border-color);

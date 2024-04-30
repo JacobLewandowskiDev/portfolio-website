@@ -15,21 +15,15 @@ export default {
       cards: [
         {
           index: 0,
-          description: "View my projects.",
-          link: "Portfolio",
-          name: "View Projects",
-        },
-        {
-          index: 1,
-          description: "Learn more about me.",
+          description: "Learn more About me.",
           link: "About",
           name: "About me",
         },
         {
-          index: 2,
-          description: "Preview my blog.",
-          link: "Blog",
-          name: "My blog",
+          index: 1,
+          description: "View my Coding Projects.",
+          link: "Portfolio",
+          name: "View Projects",
         },
       ],
       showFlowField: window.innerWidth >= 665, // Change also the value in methods: handleResize() method when modifying.
@@ -102,7 +96,7 @@ export default {
   line-height: 1;
   word-break: keep-all;
   text-align: center;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0;
   justify-content: flex-end;
   align-items: center;
 }
@@ -111,13 +105,9 @@ export default {
   display: flex;
   justify-content: center;
   width: fit-content;
-  padding-top: 2rem;
+  padding-top: 1.3rem;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.card:nth-child(2) {
-  margin-top: -3rem;
 }
 
 @media screen and (max-width: 1089px) {

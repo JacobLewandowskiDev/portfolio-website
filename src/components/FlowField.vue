@@ -94,7 +94,6 @@ export default {
           this.init();
 
           window.addEventListener("resize", (e) => {
-            console.log(e.target.innerWidth, e.target.innerHeight);
             this.resize(e.target.innerWidth, e.target.innerHeight);
           });
         }
@@ -140,17 +139,14 @@ export default {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         effect.render();
         this.animationFrameId = requestAnimationFrame(animate);
-        console.log("Animation running");
         if (this.$route.path !== "/Home" && this.$route.path !== "/") {
           cancelAnimationFrame(this.animationFrameId);
-          console.log("Animation stopped");
         }
         this.animationCount++;
         if (this.animationCount >= this.maxAnimationCount) {
           // Reset particles
           effect.render();
           this.animationCount = 0; // Reset animation count
-          console.log("Particles reset");
         }
       };
       animate();

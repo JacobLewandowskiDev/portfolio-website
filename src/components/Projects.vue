@@ -6,7 +6,6 @@ import chatroom from "../assets/chatroom-app.png";
 import gwent from "../assets/gwent-app.png";
 import prodTracker from "../assets/prodtracker-app.png";
 
-
 export default {
   data() {
     return {
@@ -18,14 +17,12 @@ export default {
 
   methods: {
     prevProject() {
-      console.log("prev button clicked");
       if (this.currentProject > 0) {
         this.currentProject--;
       }
     },
 
     nextProject() {
-      console.log("next button clicked");
       if (this.currentProject < this.projects.length - 1) {
         this.currentProject++;
       }
@@ -37,14 +34,19 @@ export default {
 
     // Image index pulled from projectInfo.json file. Make sure to make index match with correct IMG url in assets.
     getImg(image) {
-      switch(image) {
-        case "0": return prodTracker;
-        case "1": return denarius;
-        case "2": return calculator;
-        case "3": return chatroom;
-        case "4": return gwent;
+      switch (image) {
+        case "0":
+          return prodTracker;
+        case "1":
+          return denarius;
+        case "2":
+          return calculator;
+        case "3":
+          return chatroom;
+        case "4":
+          return gwent;
       }
-    }
+    },
   },
 };
 </script>
@@ -88,7 +90,12 @@ export default {
     <div class="details__close" @click="toggleDetails">X</div>
     <div class="details__info">
       <h2>{{ projects[currentProject].name }}</h2>
-      <br />
+      <img
+        class="details__info__mini"
+        :src="getImg(projects[currentProject].image)"
+      />
+
+      <h3>Links to Access the Project</h3>
       <div class="details__info__links">
         <a
           class="details__info__links__link"
@@ -222,6 +229,7 @@ export default {
   top: 0;
   z-index: 1000;
   background: #0a0a0a;
+  padding-bottom: .2rem;
 }
 
 .details--active {
@@ -235,9 +243,9 @@ export default {
   top: 2vh;
   right: 3rem;
   font-weight: bold;
-  font-size: 1.6rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size: 1.2rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   transition: 0.05s linear;
   border: var(--menu-icon-border);
@@ -264,11 +272,21 @@ export default {
   padding: 0.5rem;
 }
 
+.details__info__mini {
+  display: flex;
+  width: 55%;
+  min-width: 16rem;
+  border: var(--project-image-border);
+  border-radius: 0.4rem;
+  margin: 0.5rem auto;
+  opacity: .8;
+}
+
 .details__info__links {
   display: flex;
   justify-content: center;
   word-break: keep-all;
-  margin: 1rem 0;
+  margin: 0.25rem 0 1rem 0;
 }
 
 .details__info__links__link {
@@ -294,10 +312,12 @@ export default {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   flex-direction: row;
   justify-content: center;
-  margin: 0.5rem 0;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .details__info__techstack li {
@@ -305,14 +325,14 @@ export default {
   border: var(--techstack-border);
   width: 5rem;
   min-width: 5rem;
-  height: 2rem;
+  height: 1.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.1rem;
   text-align: center;
   font-weight: bold;
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 
 .details__info__links__link:hover {
@@ -357,7 +377,7 @@ export default {
   }
 
   .details__close {
-    top: .2rem;
+    top: 0.2rem;
     right: 1rem;
   }
 }
@@ -368,7 +388,7 @@ export default {
   }
 
   .details__close {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
 }
 
@@ -381,6 +401,14 @@ export default {
   h2 {
     font-size: 1.2rem;
   }
+
+  .details__info__mini {
+    min-width: 12rem;
+  }
+
+  .details__info__techstack {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -391,8 +419,13 @@ export default {
     border-radius: 0;
   }
 
+  .details__info__mini {
+    min-width: initial;
+    width: 100%;
+  }
+
   .details__info__links__link {
-    margin: 0 .25rem;
+    margin: 0 0.25rem;
   }
 }
 </style>
