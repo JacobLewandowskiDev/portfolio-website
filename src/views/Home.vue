@@ -26,7 +26,7 @@ export default {
           name: "View Projects",
         },
       ],
-      showFlowField: window.innerWidth >= 280, // Change also the value in methods: handleResize() method when modifying.
+      showFlowField: window.innerWidth >= 680, // Change also the value in methods: handleResize() method when modifying.
     };
   },
 
@@ -45,7 +45,7 @@ export default {
 
   methods: {
     handleResize() {
-      this.showFlowField = window.innerWidth >= 280;
+      this.showFlowField = window.innerWidth >= 680;
     },
   },
 };

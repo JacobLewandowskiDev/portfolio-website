@@ -80,19 +80,12 @@ export default {
 
       class Effect {
         constructor(canvas) {
-          let cells = 20;
-
           this.canvas = canvas;
           this.width = this.canvas.width;
           this.height = this.canvas.height;
           this.particles = [];
           this.numberOfParticles = 700;
-          if (this.width >= 680) {
-            cells = 20;
-          } else {
-            cells = 10;
-          }
-          this.cellSize = cells;
+          this.cellSize = 20;
           this.rows;
           this.cols;
           this.flowField = [];
