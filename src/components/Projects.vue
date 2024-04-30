@@ -95,7 +95,7 @@ export default {
         :src="getImg(projects[currentProject].image)"
       />
 
-      <h3>Links to Access the Project</h3>
+      <h3>Access the Project:</h3>
       <div class="details__info__links">
         <a
           class="details__info__links__link"
