@@ -377,7 +377,6 @@ export default {
   }
 
   .details__close {
-    top: 0.2rem;
     right: 1rem;
   }
 }
@@ -385,10 +384,6 @@ export default {
 @media screen and (max-width: 770px) {
   .details__info {
     width: 95%;
-  }
-
-  .details__close {
-    transform: scale(0.7);
   }
 }
 
