@@ -26,7 +26,7 @@ export default {
           name: "View Projects",
         },
       ],
-      showFlowField: window.innerWidth >= 665, // Change also the value in methods: handleResize() method when modifying.
+      showFlowField: window.innerWidth >= 280, // Change also the value in methods: handleResize() method when modifying.
     };
   },
 
@@ -45,7 +45,7 @@ export default {
 
   methods: {
     handleResize() {
-      this.showFlowField = window.innerWidth >= 665;
+      this.showFlowField = window.innerWidth >= 280;
     },
   },
 };
@@ -120,9 +120,6 @@ export default {
   .page__container__content__tiles {
     padding: 0;
   }
-  .card:nth-child(2) {
-    margin-top: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -134,15 +131,15 @@ export default {
 @media screen and (max-width: 665px) {
   .page {
     height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
     background: var(--background-color);
   }
 
   .page__container__content {
     width: 100%;
-  }
-
-  .card:nth-child(2) {
-    margin: 0;
+    height: 100%;
   }
 }
 
