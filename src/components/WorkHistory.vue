@@ -72,6 +72,12 @@ export default {
     margin-bottom: 1rem;
   }
 
+  @media screen and (max-width: 620px) {
+  .history__title {
+    font-size: 1rem;
+  }
+  }
+
   .history__box__role:nth-child(even) {
     margin-left: 0;
     border-left: none;
