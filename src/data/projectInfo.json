@@ -102,40 +102,6 @@
       }
     ],
     "github_url": "https://www.github.com/JacobLewandowskiDev/HVAC-Calculator",
-    "live_url": "https://www.jacoblewandowskidev.github.io/HVAC-Calculator"
-  },
-  
-  {
-    "name": "Gwent: The Card Game",
-    "image": "4",
-    "description": "A 2D RPG Sprite based multiplayer game. It features a server room for 10 players that can interact with each other via in-game chat, and can challenge each other to a game of gwent. Gwent is a turn based card game from the Witcher 3: Wild hunt vidoe game. The games serverside is written in Java, and runs on a firebase database.",
-    "techstack": [
-      {
-        "name": "Java"
-      },
-      {
-        "name": "Spring Boot"
-      },
-      {
-        "name": "PostgreSQL"
-      },
-      {
-        "name": "HTML&CSS"
-      },
-      {
-        "name": "JavaScript"
-      },
-      {
-        "name": "Maven"
-      },
-      {
-        "name": "WebSockets"
-      },
-      {
-        "name": "Firebase"
-      }
-    ],
-    "github_url": "https://www.playgwent.com/pl/",
-    "live_url": "https://www.google.com"
+    "live_url": "https://www.jakub-lewandowski.com/hvac-calculator"
   }
 ]
