@@ -229,7 +229,7 @@ export default {
   top: 0;
   z-index: 1000;
   background: #0a0a0a;
-  padding-bottom: .6rem;
+  padding-bottom: .3rem;
 }
 
 .details--active {
