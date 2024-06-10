@@ -57,7 +57,7 @@ export default {
     <Navigation />
     <div class="page__container">
       <div class="page__container__content">
-        <h1 class="page__container__content__name">Jacob Lewandowski</h1>
+        <h1 class="page__container__content__name">Jakub Lewandowski</h1>
         <div class="page__container__content__tiles">
           <Card v-for="(card, index) in cards" :key="index" :card="card" />
         </div>
