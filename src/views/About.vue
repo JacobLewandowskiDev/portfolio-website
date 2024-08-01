@@ -24,7 +24,7 @@ export default {
           <div class="aboutme__jakub__summary">
             <h2 class="aboutme__jakub__summary__name">Jakub Lewandowski</h2>
             <p class="aboutme__jakub__summary__desc">
-              Hi, I'm Jakub (Jacob), a self-taught Full-Stack Software Engineer with a
+              Hi, I'm Jakub (Jacob), a Full-Stack Software Developer with a
               love for coding and all things nerdy. I'm passionate about diving
               deep into the world of programming, solving problems, and crafting
               simple, yet elegant solutions. Constantly on the lookout for new
