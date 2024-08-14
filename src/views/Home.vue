@@ -169,4 +169,10 @@ export default {
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 435px) {
+  .card:last-child {
+    margin-top: 1.3rem;
+  }
+}
 </style>

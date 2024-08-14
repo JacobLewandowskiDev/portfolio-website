@@ -125,8 +125,8 @@ export default {
     background: rgb(0, 0, 0);
     background: linear-gradient(
       150deg,
-      rgba(0, 0, 0, 0) 55%,
-      rgba(56, 56, 56, 1) 94%
+      rgb(62 62 62 / 42%) 55%,
+      rgb(88 88 88) 94%
     );
   }
 }
