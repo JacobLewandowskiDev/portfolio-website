@@ -31,9 +31,14 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 .container h3 {
   background-color: #72727242;
   padding: 0 .8rem;
+  font-size: 1rem;
 }
 
 .backToMain {
