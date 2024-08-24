@@ -36,15 +36,15 @@ export default {
     getImg(image) {
       switch (image) {
         case "0":
-          return prodTracker;
+        return gwent;
         case "1":
-          return chatroom;
+          return prodTracker;
         case "2":
-          return denarius;
+          return chatroom;
         case "3":
-          return calculator;
+          return denarius;
         case "4":
-          return gwent;
+          return calculator;
       }
     },
   },
