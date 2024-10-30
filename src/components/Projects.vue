@@ -36,7 +36,7 @@ export default {
     getImg(image) {
       switch (image) {
         case "0":
-        return gwent;
+          return gwent;
         case "1":
           return prodTracker;
         case "2":
@@ -89,41 +89,43 @@ export default {
   <div class="details" :class="{ 'details--active': isDetails }">
     <div class="details__close" @click="toggleDetails">X</div>
     <div class="details__info">
-      <h2>{{ projects[currentProject].name }}</h2>
-      <img
-        class="details__info__mini"
-        :src="getImg(projects[currentProject].image)"
-      />
+      <div class="details__info__div">
+        <h2>{{ projects[currentProject].name }}</h2>
+        <img
+          class="details__info__div__mini"
+          :src="getImg(projects[currentProject].image)"
+        />
 
-      <h3>Access the Project:</h3>
-      <div class="details__info__links">
-        <a
-          class="details__info__links__link"
-          :href="projects[currentProject].github_url"
-          target="_blank"
-        >
-          GitHub Repo</a
-        >
-        <a
-          class="details__info__links__link"
-          :href="projects[currentProject].live_url"
-          target="_blank"
-        >
-          Live Version</a
-        >
+        <h3>Access the Project:</h3>
+        <div class="details__info__div__links">
+          <a
+            class="details__info__div__links__link"
+            :href="projects[currentProject].github_url"
+            target="_blank"
+          >
+            GitHub Repo</a
+          >
+          <a
+            class="details__info__div__links__link"
+            :href="projects[currentProject].live_url"
+            target="_blank"
+          >
+            Live Version</a
+          >
+        </div>
+        <br />
+        <h3>Project Tech Stack</h3>
+        <ul class="details__info__div__techstack">
+          <li v-for="tech in projects[currentProject].techstack">
+            {{ tech.name }}
+          </li>
+        </ul>
+        <br />
+        <h3>Project Description</h3>
+        <p class="details__info__div__description">
+          {{ projects[currentProject].description }}
+        </p>
       </div>
-      <br />
-      <h3>Project Tech Stack</h3>
-      <ul class="details__info__techstack">
-        <li v-for="tech in projects[currentProject].techstack">
-          {{ tech.name }}
-        </li>
-      </ul>
-      <br />
-      <h3>Project Description</h3>
-      <p class="details__info__description">
-        {{ projects[currentProject].description }}
-      </p>
     </div>
   </div>
 </template>
@@ -229,7 +231,7 @@ export default {
   top: 0;
   z-index: 1000;
   background: #0a0a0a;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
 }
 
 .details--active {
@@ -264,7 +266,7 @@ export default {
 }
 
 .details__info {
-  width: 50%;
+  width: 100%;
   height: 90vh;
   max-height: 90vh;
   overflow-x: hidden;
@@ -272,24 +274,29 @@ export default {
   padding: 0.5rem;
 }
 
-.details__info__mini {
+.details__info__div {
+  width: 50%;
+  margin: auto;
+}
+
+.details__info__div__mini {
   display: flex;
   width: 55%;
   min-width: 16rem;
   border: var(--project-image-border);
   border-radius: 0.4rem;
   margin: 0.5rem auto;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-.details__info__links {
+.details__info__div__links {
   display: flex;
   justify-content: center;
   word-break: keep-all;
   margin: 0.25rem 0 1rem 0;
 }
 
-.details__info__links__link {
+.details__info__div__links__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,7 +315,7 @@ export default {
   transition: ease 0.2s;
 }
 
-.details__info__techstack {
+.details__info__div__techstack {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -320,7 +327,7 @@ export default {
   margin-bottom: 1rem;
 }
 
-.details__info__techstack li {
+.details__info__div__techstack li {
   background: var(--techstack-bg);
   border: var(--techstack-border);
   width: 5rem;
@@ -335,11 +342,17 @@ export default {
   margin: 0.3rem;
 }
 
-.details__info__links__link:hover {
+.details__info__div__description {
+  text-indent: 3rem;
+  width: 75%;
+  margin: auto;
+}
+
+.details__info__div__links__link:hover {
   background: var(--button-bg-hover);
 }
 
-.details__info__links__link:active {
+.details__info__div__links__link:active {
   box-shadow: 0px 0px 0.8rem #37c6ff;
 }
 
@@ -372,7 +385,7 @@ export default {
     bottom: 0.05rem;
   }
 
-  .details__info {
+  .details__info__div {
     width: 75%;
   }
 
@@ -382,7 +395,7 @@ export default {
 }
 
 @media screen and (max-width: 770px) {
-  .details__info {
+  .details__info__div {
     width: 95%;
   }
 }
@@ -397,11 +410,11 @@ export default {
     font-size: 1.2rem;
   }
 
-  .details__info__mini {
+  .details__info__div__mini {
     min-width: 12rem;
   }
 
-  .details__info__techstack {
+  .details__info__div__techstack {
     width: 100%;
   }
 }
@@ -414,12 +427,12 @@ export default {
     border-radius: 0;
   }
 
-  .details__info__mini {
+  .details__info__div__mini {
     min-width: initial;
     width: 100%;
   }
 
-  .details__info__links__link {
+  .details__info__div__links__link {
     margin: 0 0.25rem;
   }
 }
