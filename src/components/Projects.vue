@@ -5,6 +5,7 @@ import calculator from "../assets/calculator-app.png";
 import chatroom from "../assets/chatroom-app.png";
 import gwent from "../assets/gwent-app.png";
 import prodTracker from "../assets/prodtracker-app.png";
+import tripleSevenCapital from "../assets/tripleseven-app.png";
 
 export default {
   data() {
@@ -32,18 +33,20 @@ export default {
       this.isDetails = !this.isDetails;
     },
 
-    // Image index pulled from projectInfo.json file. Make sure to make index match with correct IMG url in assets.
+    // Image index pulled from projectInfo.json file. Make sure to make the index match with correct IMG url in assets.
     getImg(image) {
       switch (image) {
         case "0":
-          return gwent;
+        return gwent;
         case "1":
-          return prodTracker;
+          return tripleSevenCapital;
         case "2":
-          return chatroom;
+          return prodTracker;
         case "3":
-          return denarius;
+          return chatroom;
         case "4":
+          return denarius;
+        case "5":
           return calculator;
       }
     },
@@ -99,12 +102,13 @@ export default {
         <h3>Access the Project:</h3>
         <div class="details__info__div__links">
           <a
+            v-if="projects[currentProject].github_url"
             class="details__info__div__links__link"
             :href="projects[currentProject].github_url"
             target="_blank"
           >
-            GitHub Repo</a
-          >
+            GitHub Repo
+          </a>
           <a
             class="details__info__div__links__link"
             :href="projects[currentProject].live_url"
