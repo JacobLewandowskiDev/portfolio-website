@@ -1,2 +1,2 @@
-# Vue 3 + Vite Personal Website
+# Personal Website
 This is my personal website version: 2.0
