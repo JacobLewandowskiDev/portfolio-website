@@ -26,7 +26,7 @@ export default {
 <template>
   <div class="job">
     <h4 class="job__info">
-      {{ role.companyName }} | {{ role.jobTitle }} | {{ role.date }}
+      {{ role.companyName }} <br> {{ role.jobTitle }} {{ role.date }}
     </h4>
     <span v-if="isEven" class="job__point--right"></span>
     <span v-else class="job__point--left"></span>

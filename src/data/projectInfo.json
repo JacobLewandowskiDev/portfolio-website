@@ -35,7 +35,7 @@
   {
     "name": "Triple Seven Capital",
     "image": "1",
-    "description": "Collaborated with the Founder & CEO of Triple Seven Capital to design and develop a modern, responsive website for the real estate investment firm. Built with Vue.js and Vite, the site features a sleek UI, intuitive navigation, and an update-friendly structure. The project includes dynamic routing, a custom domain setup, and static pre-rendering for improved performance. The result is a fast, user-friendly platform that effectively showcases the firm's mission and services.",
+    "description": "Collaborated with the Founder & CEO of Triple Seven Capital to design and develop a modern, responsive website for the real estate investment firm. Built with Vue.js the site features a sleek UI, intuitive navigation, and an update-friendly structure. The project includes dynamic routing, a custom domain setup, and static pre-rendering for improved performance. The result is a fast, user-friendly platform that effectively showcases the firm's mission and services.",
     "techstack": [
       {
         "name": "HTML&CSS"

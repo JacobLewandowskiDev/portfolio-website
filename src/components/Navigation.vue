@@ -150,7 +150,7 @@ export default {
   >
     <span class="email--overlay__close" @click="hideEmailOverlay">X</span>
     <div class="email--overlay__content">
-      <h1>Let's chat over email</h1>
+      <h1>Let's connect via email</h1>
       <br />
       <h2>jakublewandowskidev@gmail.com</h2>
     </div>

@@ -1,8 +1,16 @@
 [
+
     {
-        "jobTitle": "HVAC & MEP Engineer | Draftsman",
-        "companyName": "Aspire Drafting",
-        "date": "2021~Current",
+        "jobTitle": "Junior Mechanical Design Engineer",
+        "companyName": "Arcadis, NYC",
+        "date": "| 2025 - Current |",
+        "responsibilities": "• Designing complex HVAC systems along with equipment selection and evaulation to each project & client individual needs. \n • Drafting Mechanical drawing sets following design and load calculation principles, ensuring everything is code compliant and efficient. \n • Responsible for direct contact with equipment manufacturer to ensure the best possible unit selection for each situation. \n • Performing load calculations for HVAC, ensuring comfort, code compliance and accuracy of the completed work."
+    },
+
+    {
+        "jobTitle": "BIM Coordinator/Draftsman",
+        "companyName": "Aspire Drafting, NYC",
+        "date": "| 2021 - 2025 |",
         "responsibilities": "• Developed and implemented automated Dynamo scripts using Python and C#, increasing production efficiency by 50% and reducing project delivery times by an average of 30%, saving over 100 hours annually. \n • Drafted HVAC and MEP systems for over 25 commercial and industrial projects using AutoCAD & Revit, achieving 100% compliance with industry standards and local codes, resulting in a 20% reduction in rework costs. \n • Led and participated in cross-trade coordination of MEP systems with architects, engineers, and contractors in 50+ live meetings, cutting project delays by 15% and streamlining communication across departments. \n • End-to-end project management for complex, high-value projects, driving successful completion within budget and timeline constraints and contributing to a 25% increase in client satisfaction and retention."
     },
 
