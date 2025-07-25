@@ -1,5 +1,5 @@
 <script>
-import Projects from "../data/projectInfo.json";
+import projectInfo from "../data/projectInfo.json";
 import denarius from "../assets/denarius-app.png";
 import calculator from "../assets/calculator-app.png";
 import chatroom from "../assets/chatroom-app.png";
@@ -10,7 +10,7 @@ import tripleSevenCapital from "../assets/tripleseven-app.png";
 export default {
   data() {
     return {
-      projects: Projects,
+      projects: projectInfo,
       currentProject: 0,
       isDetails: false,
     };
@@ -129,6 +129,7 @@ export default {
         <p class="details__info__div__description">
           {{ projects[currentProject].description }}
         </p>
+        <br/>
       </div>
     </div>
   </div>
