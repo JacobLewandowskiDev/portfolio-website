@@ -155,9 +155,9 @@ export default {
     height: 6rem;
     border-radius: 50%;
     padding: 0.2rem;
-    background: linear-gradient(45deg, rgb(62 62 62 / 42%) 55%, rgb(88 88 88) 94%);
+    background: linear-gradient(45deg, rgba(34, 34, 34, 0.329) 55%, rgba(88, 88, 88, 0.6) 94%);
     box-shadow: 0.3rem 0.6rem 0.9rem rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(0.25rem);
+    backdrop-filter: blur(0.12rem);
     -webkit-backdrop-filter: blur(0.9rem);
   }
 
@@ -166,9 +166,9 @@ export default {
     width: 80%;
     font-family: var(--button-font);
     font-size: .8rem;
-    background-color: #ffffff62;
+    background-color: #ffffff65;
     box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(0.6rem);
+    backdrop-filter: blur(0.15rem);
     -webkit-backdrop-filter: blur(0.6rem);
     border: 0.12rem solid #ffffff54;
     border-radius: 0.4rem;

@@ -162,7 +162,8 @@ export default {
 <style scoped>
 #flow-field {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 110vw;
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

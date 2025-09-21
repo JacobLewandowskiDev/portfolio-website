@@ -26,7 +26,7 @@ export default {
           name: "PROJECTS",
         },
       ],
-      showFlowField: window.innerWidth >= 680, // Change also the value in methods: handleResize() method (LINE 47) when modifying.
+      showFlowField: window.innerWidth >= 300, // Change also the value in methods: handleResize() method (LINE 47) when modifying.
     };
   },
 
@@ -45,7 +45,7 @@ export default {
 
   methods: {
     handleResize() {
-      this.showFlowField = window.innerWidth >= 680;
+      this.showFlowField = window.innerWidth >= 300;
     },
   },
 };
@@ -163,10 +163,11 @@ export default {
   }
 
   .page__container__content__name {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 0;
+    white-space: normal;
   }
 
   .page__container__content__tiles {
@@ -188,6 +189,12 @@ export default {
 
   .card:last-child {
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .page__container__content__name {
+    font-size: 1.7rem;
   }
 }
 </style>
