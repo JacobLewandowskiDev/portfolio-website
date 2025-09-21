@@ -151,12 +151,15 @@ export default {
     padding: 1rem;
   }
 
+    .card:last-child {
+      padding: 0 1rem;
+    }
+
   .card__img {
     border: 0.2rem solid var(--card-mobile-border-color);
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    margin: 1rem;
     padding: 0.2rem;
     background: linear-gradient(45deg, rgb(62 62 62 / 42%) 55%, rgb(88 88 88) 94%);
     box-shadow: 0.3rem 0.6rem 0.9rem rgba(0, 0, 0, 0.4);
@@ -170,7 +173,8 @@ export default {
     font-family: var(--button-font);
     font-size: .85rem;
     background-color: var(--card-link-bg-color);
-    border: 0.15rem solid var(--card-mobile-border-color);
+    border: 0.1rem solid var(--card-mobile-border-color);
+    position: relative;
   }
 
   .card__description {
