@@ -43,6 +43,7 @@ export default {
   border-color: var(--card-border-color);
   border-radius: 24px;
   padding: 2rem;
+  background: linear-gradient(150deg, rgb(62 62 62 / 42%) 55%, rgb(88 88 88) 94%);
   box-shadow: 0.3rem 0.6rem 0.9rem rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(0.25rem);
   -webkit-backdrop-filter: blur(0.9rem);
@@ -135,5 +136,49 @@ export default {
   .card {
     margin: 0 0.25rem;
   }
+}
+
+@media screen and (max-width: 470px) {
+  .card {
+    all: initial;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 12rem;
+    height: 10rem;
+    margin: 0 1.5rem;
+    padding: 1rem;
+  }
+
+  .card__img {
+    border: 0.2rem solid var(--card-mobile-border-color);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 1rem;
+    padding: 0.2rem;
+    background: linear-gradient(45deg, rgb(62 62 62 / 42%) 55%, rgb(88 88 88) 94%);
+    box-shadow: 0.3rem 0.6rem 0.9rem rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(0.25rem);
+    -webkit-backdrop-filter: blur(0.9rem);
+  }
+
+  .card__link {
+    margin-top: 1rem;
+    width: 50%;
+    font-family: var(--button-font);
+    font-size: .85rem;
+    background-color: var(--card-link-bg-color);
+    border: 0.15rem solid var(--card-mobile-border-color);
+  }
+
+  .card__description {
+    display: none;
+  }
+
+  .card__link:active {
+    border: 0.15rem solid #37c6ff;
+}
 }
 </style>
