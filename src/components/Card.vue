@@ -145,15 +145,9 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 12rem;
+    width: 50%;
     height: 10rem;
-    margin: 0 1.5rem;
-    padding: 1rem;
   }
-
-    .card:last-child {
-      padding: 0 1rem;
-    }
 
   .card__img {
     border: 0.2rem solid var(--card-mobile-border-color);
@@ -169,11 +163,15 @@ export default {
 
   .card__link {
     margin-top: 1rem;
-    width: 50%;
+    width: 80%;
     font-family: var(--button-font);
-    font-size: .85rem;
-    background-color: var(--card-link-bg-color);
-    border: 0.1rem solid var(--card-mobile-border-color);
+    font-size: .8rem;
+    background-color: #ffffff62;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(0.6rem);
+    -webkit-backdrop-filter: blur(0.6rem);
+    border: 0.12rem solid #ffffff54;
+    border-radius: 0.4rem;
     position: relative;
   }
 
@@ -182,7 +180,33 @@ export default {
   }
 
   .card__link:active {
-    border: 0.15rem solid #37c6ff;
+    border: 0.12rem solid #37c6ff;
 }
 }
+
+@media screen and (max-width: 437px) {
+  .card__img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .card__link {
+    font-size: .6rem;
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+   .card__img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .card__link {
+    font-size: .6rem;
+    width: 6rem;
+  }
+
+}
+
 </style>

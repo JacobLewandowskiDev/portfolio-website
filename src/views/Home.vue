@@ -17,13 +17,13 @@ export default {
           index: 0,
           description: "Learn more About me.",
           link: "About",
-          name: "About me",
+          name: "ABOUT ME",
         },
         {
           index: 1,
-          description: "View my Coding Projects.",
+          description: "View my Portfolio.",
           link: "Portfolio",
-          name: "View Projects",
+          name: "PROJECTS",
         },
       ],
       showFlowField: window.innerWidth >= 680, // Change also the value in methods: handleResize() method (LINE 47) when modifying.
@@ -168,11 +168,26 @@ export default {
     margin-top: 1rem;
     margin-bottom: 0;
   }
+
+  .page__container__content__tiles {
+    all: initial;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 360px) {
+  .page__container__content__tiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .card:last-child {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
 }
 </style>
