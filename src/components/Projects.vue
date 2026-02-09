@@ -7,6 +7,7 @@ import gwent from "../assets/gwent-app.png";
 import prodTracker from "../assets/prodtracker-app.png";
 import tripleSevenCapital from "../assets/tripleseven-app.png";
 
+
 export default {
   data() {
     return {
@@ -16,7 +17,21 @@ export default {
     };
   },
 
+ mounted() {
+    window.addEventListener("keydown", this.handleEsc);
+  },
+
+  unmounted() {
+    window.removeEventListener("keydown", this.handleEsc);
+  },
+
   methods: {
+    handleEsc(e) {
+      if (e.key === "Escape" && this.isDetails) {
+        this.toggleDetails();
+      }
+    },
+
     prevProject() {
       if (this.currentProject > 0) {
         this.currentProject--;
