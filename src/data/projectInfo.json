@@ -1,6 +1,6 @@
 [
   {
-    "name": "Gwent: The Card Game",
+    "name": "Gwent: The MMORPG",
     "image": "0",
     "description": "During the playthrough of the 'Witcher 3' from CD Project I really enjoyed the mini game of 'Gwent'. It is a 2 player turn based duel, where each user has a deck of cards and the goal is to outscore the opponents monsters on the field. I enjoyed the game so much that I looked for the exact iteration of it online (Steam, websites etc.), but to my suprise the only version available was a heavily modified one also created by CD Project. That is when I decided to re-create it myself, while adding a bit of my own creativity and twist to it. My goal was to create a place, where players could create their own champion, give them a name and delve into the world of the 'Witcher' once more. I decided to go the retro route and create a sprite based 2D top down MMO RPG game. Once you create your character you will join a server where you can meet other players, talk to them via a global chat and most importantly challenge them to a game of GWENT.",
     "techstack": [
@@ -30,7 +30,7 @@
       }
     ],
     "github_url": "https://github.com/JacobLewandowskiDev/GwentMMO-front",
-    "live_url": "https://www.jakub-lewandowski.com/under-construction"
+    "live_url": "https://www.jakub-lewandowski.com/gwent"
   },
   {
     "name": "Triple Seven Capital",
@@ -110,7 +110,7 @@
       }
     ],
     "github_url": "https://www.github.com/JacobLewandowskiDev/Chat-Room",
-    "live_url": "https://www.jakub-lewandowski.com/chatroom"
+    "live_url": "https://www.jakub-lewandowski.com/project-discontinued"
   },
   {
     "name": "Denarius",
